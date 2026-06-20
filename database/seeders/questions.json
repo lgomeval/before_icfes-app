@@ -1,0 +1,53 @@
+[
+    {
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_number": 1,
+        "question_text": "En una ciudad, para ir desde un punto hasta otro, se deben recorrer 9 km al norte y, luego, 12 km al oriente, formando un ángulo recto. ¿Cuál es la distancia, en kilómetros, que separa a los dos puntos?",
+        "options": {
+            "A": "√6",
+            "B": "√42",
+            "C": "√63",
+            "D": "√225"
+        },
+        "correct_answer": "D",
+        "explanation": "Por el teorema de Pitágoras: d² = 9² + 12² = 81 + 144 = 225, entonces d = √225 = 15 km.",
+        "has_image": false,
+        "source_image_path": "images/before_icfes/imagenes_preguntas/Captura desde 2026-06-20 10-50-05.png"
+    },
+    {
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_number": 1,
+        "question_text": "¿Cuál es la función principal de las mitocondrias en la célula?",
+        "options": {
+            "A": "Sintetizar proteínas",
+            "B": "Almacenar material genético",
+            "C": "Producir energía (ATP)",
+            "D": "Realizar la fotosíntesis"
+        },
+        "correct_answer": "C",
+        "explanation": "Las mitocondrias son los orgánulos encargados de la respiración celular, donde se produce la mayor parte del ATP (energía) de la célula.",
+        "has_image": false,
+        "source_image_path": null
+    },
+    {
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_number": 1,
+        "question_text": "Choose the correct option: She ___ to school every day.",
+        "options": {
+            "A": "go",
+            "B": "goes",
+            "C": "going",
+            "D": "gone"
+        },
+        "correct_answer": "B",
+        "explanation": "En presente simple, tercera persona singular (she/he/it) el verbo lleva 's' o 'es': she goes.",
+        "has_image": false,
+        "source_image_path": null
+    }
+]

@@ -11,6 +11,8 @@ class Question extends Model
     /** @use HasFactory<QuestionFactory> */
     use HasFactory;
 
+    protected $guarded = [];
+
     protected function casts(): array
     {
         return [

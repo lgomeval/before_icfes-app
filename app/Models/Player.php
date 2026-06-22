@@ -6,7 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Player extends Model
 {
-    protected $fillable = ['nickname'];
+    protected $fillable = ['nickname', 'xp', 'level', 'streak', 'hearts', 'coins'];
+
+    protected function casts(): array
+    {
+        return [
+            'xp' => 'integer',
+            'level' => 'integer',
+            'streak' => 'integer',
+            'hearts' => 'integer',
+            'coins' => 'integer',
+        ];
+    }
 
     public function answers()
     {
@@ -25,7 +36,10 @@ class Player extends Model
 
     public static function findOrCreateByNickname(string $nickname): self
     {
-        return static::firstOrCreate(['nickname' => trim($nickname)]);
+        return static::firstOrCreate(
+            ['nickname' => trim($nickname)],
+            ['xp' => 0, 'level' => 1, 'streak' => 0, 'hearts' => 5, 'coins' => 0]
+        );
     }
 
     public function stats(): array

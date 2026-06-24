@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Player extends Model
 {
-    protected $fillable = ['nickname', 'xp', 'level', 'streak', 'hearts', 'coins'];
+    protected $fillable = ['nickname', 'pin', 'xp', 'level', 'streak', 'hearts', 'coins'];
+
+    protected $hidden = ['pin'];
 
     protected function casts(): array
     {
@@ -17,6 +19,25 @@ class Player extends Model
             'hearts' => 'integer',
             'coins' => 'integer',
         ];
+    }
+
+    public function hasPin(): bool
+    {
+        return $this->pin !== null;
+    }
+
+    public function verifyPin(string $pin): bool
+    {
+        if (! $this->hasPin()) {
+            return false;
+        }
+
+        return password_verify($pin, $this->pin);
+    }
+
+    public function setPin(string $pin): void
+    {
+        $this->update(['pin' => password_hash($pin, PASSWORD_BCRYPT)]);
     }
 
     public function answers()

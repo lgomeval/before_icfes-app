@@ -10,6 +10,9 @@ new class extends Component
 {
     public ?Player $player = null;
     public string $nickname = '';
+    public string $pin = '';
+    public string $loginStep = 'nickname';
+    public string $pinError = '';
     public string $currentScreen = 'mapa';
 
     /** Quiz */
@@ -49,9 +52,66 @@ new class extends Component
     public function login(): void
     {
         $this->validate(['nickname' => 'required|string|min:2|max:30']);
-        $this->player = Player::findOrCreateByNickname($this->nickname);
+
+        $player = Player::findByNickname($this->nickname);
+
+        if ($player) {
+            $this->loginStep = $player->hasPin() ? 'enter_pin' : 'set_pin';
+        } else {
+            Player::findOrCreateByNickname($this->nickname);
+            $this->loginStep = 'set_pin';
+        }
+
+        $this->pin = '';
+        $this->pinError = '';
+    }
+
+    public function verifyPinAndLogin(): void
+    {
+        $this->validate([
+            'pin' => 'required|string|size:4|regex:/^[0-9]{4}$/',
+        ]);
+
+        $this->pinError = '';
+
+        $player = Player::findByNickname($this->nickname);
+
+        if (! $player || ! $player->verifyPin($this->pin)) {
+            $this->pinError = 'PIN incorrecto. Intenta de nuevo.';
+
+            return;
+        }
+
+        $this->player = $player;
         session()->put('player_id', $this->player->id);
         $this->loadStats();
+    }
+
+    public function setupPinAndLogin(): void
+    {
+        $this->validate([
+            'pin' => 'required|string|size:4|regex:/^[0-9]{4}$/',
+        ]);
+
+        $player = Player::findByNickname($this->nickname);
+
+        if (! $player) {
+            $this->loginStep = 'nickname';
+
+            return;
+        }
+
+        $player->setPin($this->pin);
+        $this->player = $player;
+        session()->put('player_id', $this->player->id);
+        $this->loadStats();
+    }
+
+    public function backToNickname(): void
+    {
+        $this->loginStep = 'nickname';
+        $this->pin = '';
+        $this->pinError = '';
     }
 
     public function logout(): void
@@ -59,6 +119,9 @@ new class extends Component
         session()->forget('player_id');
         $this->player = null;
         $this->nickname = '';
+        $this->pin = '';
+        $this->loginStep = 'nickname';
+        $this->pinError = '';
         $this->currentScreen = 'mapa';
     }
 
@@ -330,34 +393,107 @@ new class extends Component
     setTransition(t) { this.transition = t; this.show = false; setTimeout(() => { this.show = true; }, 50); }
 }">
     @if (! $player)
-        {{-- Nickname form --}}
+        {{-- Login / Register --}}
         <div class="flex-1 flex items-center justify-center px-4 min-h-screen">
             <div class="w-full max-w-sm animate-fade-in">
                 <div class="bg-white rounded-3xl border-4 border-slate-200 shadow-sm p-8 text-center">
                     <div class="text-5xl mb-4">📚</div>
                     <h1 class="text-2xl font-black text-slate-800 mb-1">ICFES Study</h1>
                     <p class="text-sm text-slate-500 font-medium mb-1">Seoul Edition</p>
-                    <p class="text-slate-400 text-xs mb-6">Elige un nickname para empezar tu viaje</p>
 
-                    <form wire:submit="login" class="space-y-4">
-                        <input
-                            type="text"
-                            wire:model="nickname"
-                            placeholder="Tu nickname..."
-                            class="w-full rounded-2xl border-4 border-slate-200 focus:border-blue-500 focus:ring-0 text-lg px-4 py-3 text-center font-semibold"
-                            autocomplete="off"
-                            autofocus
-                        />
-                        @error('nickname')
-                            <p class="text-red-500 text-xs font-semibold">{{ $message }}</p>
-                        @enderror
+                    {{-- Step 1: Nickname --}}
+                    @if ($loginStep === 'nickname')
+                        <p class="text-slate-400 text-xs mb-6">Elige un nickname para empezar tu viaje</p>
 
-                        <button type="submit" wire:loading.attr="disabled"
-                            class="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-slate-300 text-white font-black py-3 px-6 rounded-2xl border-b-4 border-blue-700 active:translate-y-1 active:border-b-2 transition-all text-lg shadow-[0_4px_0_0_rgba(30,64,175,1)]">
-                            <span wire:loading.remove>Entrar</span>
-                            <span wire:loading>Cargando...</span>
-                        </button>
-                    </form>
+                        <form wire:submit="login" class="space-y-4">
+                            <input
+                                type="text"
+                                wire:model="nickname"
+                                placeholder="Tu nickname..."
+                                class="w-full rounded-2xl border-4 border-slate-200 focus:border-blue-500 focus:ring-0 text-lg px-4 py-3 text-center font-semibold"
+                                autocomplete="off"
+                                autofocus
+                            />
+                            @error('nickname')
+                                <p class="text-red-500 text-xs font-semibold">{{ $message }}</p>
+                            @enderror
+
+                            <button type="submit" wire:loading.attr="disabled"
+                                class="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-slate-300 text-white font-black py-3 px-6 rounded-2xl border-b-4 border-blue-700 active:translate-y-1 active:border-b-2 transition-all text-lg shadow-[0_4px_0_0_rgba(30,64,175,1)]">
+                                <span wire:loading.remove>Entrar</span>
+                                <span wire:loading>Cargando...</span>
+                            </button>
+                        </form>
+
+                    {{-- Step 2: Set PIN (new player or existing without PIN) --}}
+                    @elseif ($loginStep === 'set_pin')
+                        <p class="text-slate-400 text-xs mb-1">¡Bienvenid@ <strong class="text-slate-700">{{ $nickname }}</strong>!</p>
+                        <p class="text-slate-400 text-xs mb-6">Crea un PIN de 4 dígitos para proteger tu progreso</p>
+
+                        <form wire:submit="setupPinAndLogin" class="space-y-4">
+                            <input
+                                type="password"
+                                wire:model="pin"
+                                inputmode="numeric"
+                                maxlength="4"
+                                pattern="[0-9]*"
+                                autocomplete="new-password"
+                                placeholder="••••"
+                                class="w-full rounded-2xl border-4 border-slate-200 focus:border-green-500 focus:ring-0 text-2xl px-4 py-3 text-center font-bold tracking-[0.5em]"
+                                autofocus
+                            />
+                            @error('pin')
+                                <p class="text-red-500 text-xs font-semibold">{{ $message }}</p>
+                            @enderror
+
+                            <button type="submit" wire:loading.attr="disabled"
+                                class="w-full bg-green-500 hover:bg-green-600 disabled:bg-slate-300 text-white font-black py-3 px-6 rounded-2xl border-b-4 border-green-700 active:translate-y-1 active:border-b-2 transition-all text-lg shadow-[0_4px_0_0_rgba(21,128,61,1)]">
+                                <span wire:loading.remove>Guardar PIN y Entrar</span>
+                                <span wire:loading>Guardando...</span>
+                            </button>
+
+                            <button type="button" wire:click="backToNickname"
+                                class="w-full text-xs font-bold text-slate-400 hover:text-slate-600 uppercase py-2">
+                                Cambiar nickname
+                            </button>
+                        </form>
+
+                    {{-- Step 3: Enter PIN (returning player) --}}
+                    @elseif ($loginStep === 'enter_pin')
+                        <p class="text-slate-400 text-xs mb-1">¡Hola de nuevo <strong class="text-slate-700">{{ $nickname }}</strong>!</p>
+                        <p class="text-slate-400 text-xs mb-6">Ingresa tu PIN de 4 dígitos para continuar</p>
+
+                        <form wire:submit="verifyPinAndLogin" class="space-y-4">
+                            <input
+                                type="password"
+                                wire:model="pin"
+                                inputmode="numeric"
+                                maxlength="4"
+                                pattern="[0-9]*"
+                                autocomplete="current-password"
+                                placeholder="••••"
+                                class="w-full rounded-2xl border-4 border-slate-200 focus:border-blue-500 focus:ring-0 text-2xl px-4 py-3 text-center font-bold tracking-[0.5em]"
+                                autofocus
+                            />
+                            @error('pin')
+                                <p class="text-red-500 text-xs font-semibold">{{ $message }}</p>
+                            @enderror
+                            @if ($pinError)
+                                <p class="text-red-500 text-xs font-semibold">{{ $pinError }}</p>
+                            @endif
+
+                            <button type="submit" wire:loading.attr="disabled"
+                                class="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-slate-300 text-white font-black py-3 px-6 rounded-2xl border-b-4 border-blue-700 active:translate-y-1 active:border-b-2 transition-all text-lg shadow-[0_4px_0_0_rgba(30,64,175,1)]">
+                                <span wire:loading.remove>Entrar</span>
+                                <span wire:loading>Verificando...</span>
+                            </button>
+
+                            <button type="button" wire:click="backToNickname"
+                                class="w-full text-xs font-bold text-slate-400 hover:text-slate-600 uppercase py-2">
+                                Cambiar nickname
+                            </button>
+                        </form>
+                    @endif
                 </div>
             </div>
         </div>

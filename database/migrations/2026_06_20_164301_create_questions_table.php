@@ -19,6 +19,8 @@ return new class extends Migration
             $table->text('explanation')->nullable();
             $table->json('options')->nullable();
             $table->string('topic')->nullable();
+            $table->string('area')->nullable();
+            $table->string('level')->nullable();
             $table->timestamps();
         });
     }

@@ -1,0 +1,1502 @@
+[
+    {
+        "question_number": 1,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Facil",
+        "question_text": "¿Cuál es la unidad básica estructural y funcional de los seres vivos?",
+        "options": {
+            "A": "Tejido",
+            "B": "Órgano",
+            "C": "Célula",
+            "D": "Sistema"
+        },
+        "correct_answer": "C",
+        "explanation": "La célula es la unidad básica de todos los seres vivos."
+    },
+    {
+        "question_number": 2,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Facil",
+        "question_text": "¿Qué órgano bombea la sangre a todo el cuerpo?",
+        "options": {
+            "A": "Pulmón",
+            "B": "Corazón",
+            "C": "Riñón",
+            "D": "Hígado"
+        },
+        "correct_answer": "B",
+        "explanation": "El corazón impulsa la sangre mediante contracciones."
+    },
+    {
+        "question_number": 3,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Facil",
+        "question_text": "¿Cuál es el proceso mediante el cual las plantas producen su alimento?",
+        "options": {
+            "A": "Respiración",
+            "B": "Digestión",
+            "C": "Fotosíntesis",
+            "D": "Fermentación"
+        },
+        "correct_answer": "C",
+        "explanation": "La fotosíntesis utiliza luz solar para producir glucosa."
+    },
+    {
+        "question_number": 4,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Facil",
+        "question_text": "¿Qué gas necesitan las plantas para realizar la fotosíntesis?",
+        "options": {
+            "A": "Oxígeno",
+            "B": "Nitrógeno",
+            "C": "Dióxido de carbono",
+            "D": "Helio"
+        },
+        "correct_answer": "C",
+        "explanation": "Las plantas toman CO₂ del aire."
+    },
+    {
+        "question_number": 5,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Facil",
+        "question_text": "¿Cuál de los siguientes es un vertebrado?",
+        "options": {
+            "A": "Lombriz",
+            "B": "Araña",
+            "C": "Rana",
+            "D": "Medusa"
+        },
+        "correct_answer": "C",
+        "explanation": "La rana posee columna vertebral."
+    },
+    {
+        "question_number": 6,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_text": "¿Cuál es la función principal de los glóbulos rojos?",
+        "options": {
+            "A": "Defender el organismo",
+            "B": "Transportar oxígeno",
+            "C": "Producir hormonas",
+            "D": "Regular la temperatura"
+        },
+        "correct_answer": "B",
+        "explanation": "La hemoglobina transporta oxígeno a los tejidos."
+    },
+    {
+        "question_number": 7,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_text": "¿Qué sistema del cuerpo humano se encarga de coordinar respuestas a estímulos?",
+        "options": {
+            "A": "Digestivo",
+            "B": "Respiratorio",
+            "C": "Nervioso",
+            "D": "Óseo"
+        },
+        "correct_answer": "C",
+        "explanation": "El sistema nervioso recibe y procesa información."
+    },
+    {
+        "question_number": 8,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_text": "Si una planta se mantiene sin luz durante varias semanas, ¿qué ocurrirá?",
+        "options": {
+            "A": "Crecerá más rápido",
+            "B": "No tendrá cambios",
+            "C": "Disminuirá la fotosíntesis",
+            "D": "Producirá más oxígeno"
+        },
+        "correct_answer": "C",
+        "explanation": "La luz es necesaria para la fotosíntesis."
+    },
+    {
+        "question_number": 9,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_text": "¿Cuál es la principal función del sistema digestivo?",
+        "options": {
+            "A": "Transportar oxígeno",
+            "B": "Procesar nutrientes",
+            "C": "Controlar movimientos",
+            "D": "Producir sangre"
+        },
+        "correct_answer": "B",
+        "explanation": "Transforma los alimentos en nutrientes aprovechables."
+    },
+    {
+        "question_number": 10,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Medio",
+        "question_text": "¿Dónde se encuentra la información genética de una célula?",
+        "options": {
+            "A": "Membrana",
+            "B": "Citoplasma",
+            "C": "Núcleo",
+            "D": "Mitocondria"
+        },
+        "correct_answer": "C",
+        "explanation": "El ADN se encuentra principalmente en el núcleo."
+    },
+    {
+        "question_number": 11,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la función principal de las mitocondrias?",
+        "options": {
+            "A": "Producción de energía",
+            "B": "Síntesis de ADN",
+            "C": "Almacenamiento de agua",
+            "D": "Protección celular"
+        },
+        "correct_answer": "A",
+        "explanation": "Las mitocondrias producen ATP."
+    },
+    {
+        "question_number": 12,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "Un investigador observa que una bacteria se reproduce rápidamente por división celular. ¿Qué proceso está observando?",
+        "options": {
+            "A": "Mitosis",
+            "B": "Gemación",
+            "C": "Fisión binaria",
+            "D": "Meiosis"
+        },
+        "correct_answer": "C",
+        "explanation": "Las bacterias se reproducen por fisión binaria."
+    },
+    {
+        "question_number": 13,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el producto principal de la fotosíntesis utilizado por la planta como fuente de energía?",
+        "options": {
+            "A": "Oxígeno",
+            "B": "Glucosa",
+            "C": "Agua",
+            "D": "Nitrógeno"
+        },
+        "correct_answer": "B",
+        "explanation": "La glucosa almacena la energía producida."
+    },
+    {
+        "question_number": 14,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Por qué los antibióticos no son efectivos contra los virus?",
+        "options": {
+            "A": "Porque los virus son más grandes",
+            "B": "Porque los virus no poseen estructuras celulares sobre las que actúan los antibióticos",
+            "C": "Porque viven en el agua",
+            "D": "Porque son plantas microscópicas"
+        },
+        "correct_answer": "B",
+        "explanation": "Los antibióticos atacan procesos celulares bacterianos."
+    },
+    {
+        "question_number": 15,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "Si una población de depredadores aumenta considerablemente, ¿qué podría ocurrir inicialmente con la población de presas?",
+        "options": {
+            "A": "Aumentar",
+            "B": "Desaparecer instantáneamente",
+            "C": "Disminuir",
+            "D": "No cambiar"
+        },
+        "correct_answer": "C",
+        "explanation": "Mayor depredación reduce el número de presas."
+    },
+    {
+        "question_number": 16,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la función principal de los glóbulos blancos?",
+        "options": {
+            "A": "Transportar oxígeno",
+            "B": "Defender al organismo de infecciones",
+            "C": "Regular la temperatura",
+            "D": "Transportar nutrientes"
+        },
+        "correct_answer": "B",
+        "explanation": "Los glóbulos blancos forman parte del sistema inmunológico."
+    },
+    {
+        "question_number": 17,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Qué ocurre durante la respiración celular?",
+        "options": {
+            "A": "Se produce ADN",
+            "B": "Se obtiene energía a partir de nutrientes",
+            "C": "Se fabrica clorofila",
+            "D": "Se forman tejidos"
+        },
+        "correct_answer": "B",
+        "explanation": "La respiración celular libera energía almacenada en la glucosa."
+    },
+    {
+        "question_number": 18,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "Un científico compara el crecimiento de dos plantas: una recibe fertilizante y otra no. ¿Cuál es la variable independiente?",
+        "options": {
+            "A": "Altura de la planta",
+            "B": "Tiempo de crecimiento",
+            "C": "Uso de fertilizante",
+            "D": "Cantidad de hojas"
+        },
+        "correct_answer": "C",
+        "explanation": "Es la variable manipulada por el investigador."
+    },
+    {
+        "question_number": 19,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál de las siguientes estructuras está presente tanto en células animales como vegetales?",
+        "options": {
+            "A": "Pared celular",
+            "B": "Cloroplasto",
+            "C": "Núcleo",
+            "D": "Vacuola central"
+        },
+        "correct_answer": "C",
+        "explanation": "El núcleo está presente en ambas células eucariotas."
+    },
+    {
+        "question_number": 20,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Qué ventaja evolutiva ofrece la reproducción sexual?",
+        "options": {
+            "A": "Menor gasto energético",
+            "B": "Mayor rapidez",
+            "C": "Mayor variabilidad genética",
+            "D": "Producción de clones"
+        },
+        "correct_answer": "C",
+        "explanation": "La recombinación genética aumenta la diversidad."
+    },
+    {
+        "question_number": 21,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Qué molécula almacena la información genética hereditaria?",
+        "options": {
+            "A": "ATP",
+            "B": "ADN",
+            "C": "ARN",
+            "D": "Proteína"
+        },
+        "correct_answer": "B",
+        "explanation": "El ADN contiene la información genética."
+    },
+    {
+        "question_number": 22,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Por qué el ejercicio físico aumenta la frecuencia respiratoria?",
+        "options": {
+            "A": "Para enfriar los músculos",
+            "B": "Para producir más sangre",
+            "C": "Para obtener más oxígeno y eliminar CO₂",
+            "D": "Para reducir la presión arterial"
+        },
+        "correct_answer": "C",
+        "explanation": "Los músculos requieren más oxígeno durante la actividad."
+    },
+    {
+        "question_number": 23,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "En un experimento se mide el efecto de diferentes cantidades de agua sobre el crecimiento de una planta. ¿Qué variable depende del experimento?",
+        "options": {
+            "A": "Cantidad de agua",
+            "B": "Tipo de maceta",
+            "C": "Altura de la planta",
+            "D": "Temperatura ambiente"
+        },
+        "correct_answer": "C",
+        "explanation": "Es el resultado que se observa y mide."
+    },
+    {
+        "question_number": 24,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la función principal de las raíces en las plantas?",
+        "options": {
+            "A": "Producir flores",
+            "B": "Captar luz solar",
+            "C": "Absorber agua y minerales",
+            "D": "Liberar oxígeno"
+        },
+        "correct_answer": "C",
+        "explanation": "Las raíces absorben agua y nutrientes del suelo."
+    },
+    {
+        "question_number": 25,
+        "area": "Ciencias Naturales",
+        "topic": "Biologia",
+        "level": "Dificil",
+        "question_text": "¿Qué sucede en una cadena alimentaria cuando desaparece un productor?",
+        "options": {
+            "A": "Aumentan todos los consumidores",
+            "B": "No ocurre ningún cambio",
+            "C": "Se afecta el flujo de energía del ecosistema",
+            "D": "Aumenta la fotosíntesis"
+        },
+        "correct_answer": "C",
+        "explanation": "Los productores son la base energética de la cadena alimentaria."
+    },
+    {
+        "question_number": 26,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional?",
+        "options": {
+            "A": "Joule",
+            "B": "Newton",
+            "C": "Watt",
+            "D": "Pascal"
+        },
+        "correct_answer": "B",
+        "explanation": "La fuerza se mide en newtons (N)."
+    },
+    {
+        "question_number": 27,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la unidad de medida de la velocidad?",
+        "options": {
+            "A": "m\/s",
+            "B": "kg",
+            "C": "N",
+            "D": "J"
+        },
+        "correct_answer": "A",
+        "explanation": "La velocidad se expresa en metros por segundo."
+    },
+    {
+        "question_number": 28,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Facil",
+        "question_text": "¿Qué ocurre con un objeto cuando no actúa ninguna fuerza neta sobre él?",
+        "options": {
+            "A": "Acelera",
+            "B": "Explota",
+            "C": "Mantiene su estado de movimiento",
+            "D": "Se detiene siempre"
+        },
+        "correct_answer": "C",
+        "explanation": "Primera Ley de Newton."
+    },
+    {
+        "question_number": 29,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Facil",
+        "question_text": "¿Qué instrumento se utiliza para medir la temperatura?",
+        "options": {
+            "A": "Barómetro",
+            "B": "Termómetro",
+            "C": "Dinamómetro",
+            "D": "Voltímetro"
+        },
+        "correct_answer": "B",
+        "explanation": "El termómetro mide temperatura."
+    },
+    {
+        "question_number": 30,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Facil",
+        "question_text": "¿Qué forma de energía posee un objeto en movimiento?",
+        "options": {
+            "A": "Potencial",
+            "B": "Nuclear",
+            "C": "Cinética",
+            "D": "Química"
+        },
+        "correct_answer": "C",
+        "explanation": "La energía cinética depende del movimiento."
+    },
+    {
+        "question_number": 31,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "Un automóvil recorre 120 km en 2 horas. ¿Cuál es su velocidad promedio?",
+        "options": {
+            "A": "40 km\/h",
+            "B": "50 km\/h",
+            "C": "60 km\/h",
+            "D": "80 km\/h"
+        },
+        "correct_answer": "C",
+        "explanation": "Velocidad = distancia \/ tiempo."
+    },
+    {
+        "question_number": 32,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la fórmula de la densidad?",
+        "options": {
+            "A": "masa × volumen",
+            "B": "masa \/ volumen",
+            "C": "volumen \/ masa",
+            "D": "fuerza × distancia"
+        },
+        "correct_answer": "B",
+        "explanation": "ρ = m\/V."
+    },
+    {
+        "question_number": 33,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Por qué un barco de acero puede flotar?",
+        "options": {
+            "A": "Porque es liviano",
+            "B": "Porque no tiene peso",
+            "C": "Porque desplaza suficiente agua",
+            "D": "Porque contiene oxígeno"
+        },
+        "correct_answer": "C",
+        "explanation": "Principio de Arquímedes."
+    },
+    {
+        "question_number": 34,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "Si se duplica la masa de un objeto manteniendo la misma fuerza aplicada, la aceleración:",
+        "options": {
+            "A": "Se duplica",
+            "B": "Permanece igual",
+            "C": "Se reduce a la mitad",
+            "D": "Desaparece"
+        },
+        "correct_answer": "C",
+        "explanation": "F = ma."
+    },
+    {
+        "question_number": 35,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la fuente principal de energía para la Tierra?",
+        "options": {
+            "A": "La Luna",
+            "B": "El Sol",
+            "C": "Los océanos",
+            "D": "Los volcanes"
+        },
+        "correct_answer": "B",
+        "explanation": "La mayor parte de la energía terrestre proviene del Sol."
+    },
+    {
+        "question_number": 36,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Qué ocurre con la energía potencial gravitacional al aumentar la altura?",
+        "options": {
+            "A": "Disminuye",
+            "B": "Desaparece",
+            "C": "Aumenta",
+            "D": "Permanece constante"
+        },
+        "correct_answer": "C",
+        "explanation": "Ep = mgh."
+    },
+    {
+        "question_number": 37,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la unidad de energía en el Sistema Internacional?",
+        "options": {
+            "A": "Newton",
+            "B": "Pascal",
+            "C": "Joule",
+            "D": "Volt"
+        },
+        "correct_answer": "C",
+        "explanation": "La energía se mide en joules."
+    },
+    {
+        "question_number": 38,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Por qué una pelota lanzada hacia arriba vuelve a caer?",
+        "options": {
+            "A": "Por el viento",
+            "B": "Por la gravedad",
+            "C": "Por la presión",
+            "D": "Por la temperatura"
+        },
+        "correct_answer": "B",
+        "explanation": "La gravedad atrae los cuerpos hacia la Tierra."
+    },
+    {
+        "question_number": 39,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "Si un objeto recorre la misma distancia en menos tiempo, su velocidad:",
+        "options": {
+            "A": "Disminuye",
+            "B": "Permanece igual",
+            "C": "Aumenta",
+            "D": "Se vuelve cero"
+        },
+        "correct_answer": "C",
+        "explanation": "La velocidad aumenta cuando disminuye el tiempo."
+    },
+    {
+        "question_number": 40,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Medio",
+        "question_text": "¿Qué tipo de energía almacena una batería?",
+        "options": {
+            "A": "Mecánica",
+            "B": "Química",
+            "C": "Nuclear",
+            "D": "Sonora"
+        },
+        "correct_answer": "B",
+        "explanation": "Las baterías almacenan energía química."
+    },
+    {
+        "question_number": 41,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Qué ley explica la relación entre fuerza, masa y aceleración?",
+        "options": {
+            "A": "Ley de Boyle",
+            "B": "Ley de Newton",
+            "C": "Ley de Ohm",
+            "D": "Ley de Hooke"
+        },
+        "correct_answer": "B",
+        "explanation": "Segunda Ley de Newton: F = ma."
+    },
+    {
+        "question_number": 42,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la unidad de potencia?",
+        "options": {
+            "A": "Newton",
+            "B": "Joule",
+            "C": "Watt",
+            "D": "Volt"
+        },
+        "correct_answer": "C",
+        "explanation": "La potencia se mide en watts."
+    },
+    {
+        "question_number": 43,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Por qué se observa un relámpago antes de escuchar el trueno?",
+        "options": {
+            "A": "La luz viaja más rápido que el sonido",
+            "B": "El sonido no se mueve",
+            "C": "La lluvia lo impide",
+            "D": "El aire absorbe la luz"
+        },
+        "correct_answer": "A",
+        "explanation": "La velocidad de la luz es mucho mayor."
+    },
+    {
+        "question_number": 44,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "Si aumenta la resistencia eléctrica y el voltaje permanece constante, la corriente:",
+        "options": {
+            "A": "Aumenta",
+            "B": "Disminuye",
+            "C": "No cambia",
+            "D": "Se duplica"
+        },
+        "correct_answer": "B",
+        "explanation": "Ley de Ohm: I = V\/R."
+    },
+    {
+        "question_number": 45,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Qué tipo de onda necesita un medio material para propagarse?",
+        "options": {
+            "A": "Electromagnética",
+            "B": "Lumínica",
+            "C": "Mecánica",
+            "D": "Radioeléctrica"
+        },
+        "correct_answer": "C",
+        "explanation": "Las ondas mecánicas requieren un medio."
+    },
+    {
+        "question_number": 46,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Qué sucede con la presión al disminuir el área manteniendo la misma fuerza?",
+        "options": {
+            "A": "Disminuye",
+            "B": "Aumenta",
+            "C": "No cambia",
+            "D": "Desaparece"
+        },
+        "correct_answer": "B",
+        "explanation": "P = F\/A."
+    },
+    {
+        "question_number": 47,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "Un objeto cae libremente. Si se desprecia la resistencia del aire, su aceleración es:",
+        "options": {
+            "A": "Variable",
+            "B": "Cero",
+            "C": "Constante",
+            "D": "Negativa siempre"
+        },
+        "correct_answer": "C",
+        "explanation": "La aceleración gravitacional es aproximadamente constante."
+    },
+    {
+        "question_number": 48,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la principal fuente de energía en una central hidroeléctrica?",
+        "options": {
+            "A": "Carbón",
+            "B": "Petróleo",
+            "C": "Agua en movimiento",
+            "D": "Gas natural"
+        },
+        "correct_answer": "C",
+        "explanation": "Aprovecha la energía potencial y cinética del agua."
+    },
+    {
+        "question_number": 49,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "¿Qué ocurre con la energía cuando se transforma de una forma a otra?",
+        "options": {
+            "A": "Se destruye",
+            "B": "Se crea",
+            "C": "Se conserva",
+            "D": "Desaparece"
+        },
+        "correct_answer": "C",
+        "explanation": "Principio de conservación de la energía."
+    },
+    {
+        "question_number": 50,
+        "area": "Ciencias Naturales",
+        "topic": "Fisica",
+        "level": "Dificil",
+        "question_text": "Si dos objetos tienen la misma velocidad pero diferente masa, ¿cuál posee mayor energía cinética?",
+        "options": {
+            "A": "El de menor masa",
+            "B": "Ambos igual",
+            "C": "El de mayor masa",
+            "D": "No se puede determinar"
+        },
+        "correct_answer": "C",
+        "explanation": "Ec = 1\/2 mv²."
+    },
+    {
+        "question_number": 51,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la unidad básica de la materia?",
+        "options": {
+            "A": "Molécula",
+            "B": "Célula",
+            "C": "Átomo",
+            "D": "Protón"
+        },
+        "correct_answer": "C",
+        "explanation": "Los átomos son las unidades básicas de la materia."
+    },
+    {
+        "question_number": 52,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Facil",
+        "question_text": "¿Cuál es el símbolo químico del oxígeno?",
+        "options": {
+            "A": "Ox",
+            "B": "O",
+            "C": "Og",
+            "D": "On"
+        },
+        "correct_answer": "B",
+        "explanation": "El símbolo químico del oxígeno es O."
+    },
+    {
+        "question_number": 53,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la fórmula química del agua?",
+        "options": {
+            "A": "HO",
+            "B": "H2O",
+            "C": "H2O2",
+            "D": "O2H"
+        },
+        "correct_answer": "B",
+        "explanation": "El agua está formada por dos átomos de hidrógeno y uno de oxígeno."
+    },
+    {
+        "question_number": 54,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Facil",
+        "question_text": "¿Qué partícula tiene carga negativa?",
+        "options": {
+            "A": "Protón",
+            "B": "Neutrón",
+            "C": "Electrón",
+            "D": "Núcleo"
+        },
+        "correct_answer": "C",
+        "explanation": "Los electrones poseen carga negativa."
+    },
+    {
+        "question_number": 55,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Facil",
+        "question_text": "¿Cuál de los siguientes es un cambio físico?",
+        "options": {
+            "A": "Oxidación del hierro",
+            "B": "Combustión de papel",
+            "C": "Evaporación del agua",
+            "D": "Digestión de alimentos"
+        },
+        "correct_answer": "C",
+        "explanation": "La evaporación cambia el estado sin alterar la composición."
+    },
+    {
+        "question_number": 56,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "¿Cuál es el pH aproximado de una sustancia neutra?",
+        "options": {
+            "A": "0",
+            "B": "3",
+            "C": "7",
+            "D": "14"
+        },
+        "correct_answer": "C",
+        "explanation": "Las sustancias neutras tienen pH 7."
+    },
+    {
+        "question_number": 57,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "Cuando el hielo se derrite, ocurre un cambio:",
+        "options": {
+            "A": "Químico",
+            "B": "Nuclear",
+            "C": "Físico",
+            "D": "Biológico"
+        },
+        "correct_answer": "C",
+        "explanation": "La sustancia sigue siendo agua."
+    },
+    {
+        "question_number": 58,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la carga eléctrica de un protón?",
+        "options": {
+            "A": "Negativa",
+            "B": "Positiva",
+            "C": "Neutra",
+            "D": "Variable"
+        },
+        "correct_answer": "B",
+        "explanation": "Los protones tienen carga positiva."
+    },
+    {
+        "question_number": 59,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "¿Por qué el hierro se oxida?",
+        "options": {
+            "A": "Pierde masa",
+            "B": "Reacciona con el oxígeno",
+            "C": "Se congela",
+            "D": "Pierde electrones de luz"
+        },
+        "correct_answer": "B",
+        "explanation": "La oxidación ocurre al reaccionar con oxígeno."
+    },
+    {
+        "question_number": 60,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "En un experimento sobre disoluciones, ¿qué variable podría medirse para evaluar la cantidad de sal disuelta?",
+        "options": {
+            "A": "Color del recipiente",
+            "B": "Temperatura ambiente",
+            "C": "Concentración de la solución",
+            "D": "Marca del vaso"
+        },
+        "correct_answer": "C",
+        "explanation": "La concentración indica la cantidad de soluto disuelto."
+    },
+    {
+        "question_number": 61,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "¿Cuál es el elemento químico más abundante en el universo?",
+        "options": {
+            "A": "Oxígeno",
+            "B": "Carbono",
+            "C": "Hidrógeno",
+            "D": "Helio"
+        },
+        "correct_answer": "C",
+        "explanation": "El hidrógeno es el elemento más abundante."
+    },
+    {
+        "question_number": 62,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Medio",
+        "question_text": "¿Qué ocurre durante una reacción química?",
+        "options": {
+            "A": "Se crean átomos nuevos",
+            "B": "Los átomos se reorganizan",
+            "C": "La materia desaparece",
+            "D": "La energía siempre se destruye"
+        },
+        "correct_answer": "B",
+        "explanation": "Las reacciones químicas reorganizan los átomos."
+    },
+    {
+        "question_number": 63,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Cuál es la función principal de los catalizadores?",
+        "options": {
+            "A": "Detener reacciones",
+            "B": "Aumentar la velocidad de reacción",
+            "C": "Destruir reactivos",
+            "D": "Crear energía"
+        },
+        "correct_answer": "B",
+        "explanation": "Los catalizadores disminuyen la energía de activación."
+    },
+    {
+        "question_number": 64,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Por qué aumenta la velocidad de una reacción al incrementar la temperatura?",
+        "options": {
+            "A": "Disminuyen las colisiones",
+            "B": "Aumenta la energía cinética de las partículas",
+            "C": "Desaparece el reactivo",
+            "D": "La masa aumenta"
+        },
+        "correct_answer": "B",
+        "explanation": "Las partículas chocan con mayor energía."
+    },
+    {
+        "question_number": 65,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Qué tipo de enlace comparten los átomos al compartir electrones?",
+        "options": {
+            "A": "Iónico",
+            "B": "Metálico",
+            "C": "Covalente",
+            "D": "Nuclear"
+        },
+        "correct_answer": "C",
+        "explanation": "Los enlaces covalentes implican compartir electrones."
+    },
+    {
+        "question_number": 66,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Qué sucede con la masa total durante una reacción química en un sistema cerrado?",
+        "options": {
+            "A": "Aumenta",
+            "B": "Disminuye",
+            "C": "Se conserva",
+            "D": "Desaparece"
+        },
+        "correct_answer": "C",
+        "explanation": "Ley de conservación de la masa."
+    },
+    {
+        "question_number": 67,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "Un estudiante compara la rapidez de disolución del azúcar en agua fría y caliente. ¿Cuál es la variable independiente?",
+        "options": {
+            "A": "Tiempo de disolución",
+            "B": "Cantidad de azúcar",
+            "C": "Temperatura del agua",
+            "D": "Volumen del recipiente"
+        },
+        "correct_answer": "C",
+        "explanation": "Es la variable que el estudiante modifica."
+    },
+    {
+        "question_number": 68,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Qué indica el número atómico de un elemento?",
+        "options": {
+            "A": "Número de neutrones",
+            "B": "Número de protones",
+            "C": "Número de moléculas",
+            "D": "Número de enlaces"
+        },
+        "correct_answer": "B",
+        "explanation": "El número atómico corresponde a los protones."
+    },
+    {
+        "question_number": 69,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Por qué el bicarbonato reacciona con el vinagre produciendo burbujas?",
+        "options": {
+            "A": "Produce dióxido de carbono",
+            "B": "Produce oxígeno líquido",
+            "C": "Produce hierro",
+            "D": "Produce agua sólida"
+        },
+        "correct_answer": "A",
+        "explanation": "La reacción libera CO₂."
+    },
+    {
+        "question_number": 70,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Cuál de las siguientes sustancias es un compuesto?",
+        "options": {
+            "A": "Oxígeno",
+            "B": "Hierro",
+            "C": "Agua",
+            "D": "Oro"
+        },
+        "correct_answer": "C",
+        "explanation": "El agua está formada por hidrógeno y oxígeno."
+    },
+    {
+        "question_number": 71,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "Si una reacción libera energía al ambiente, se clasifica como:",
+        "options": {
+            "A": "Endotérmica",
+            "B": "Exotérmica",
+            "C": "Neutra",
+            "D": "Catalítica"
+        },
+        "correct_answer": "B",
+        "explanation": "Las reacciones exotérmicas liberan energía."
+    },
+    {
+        "question_number": 72,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Por qué la sal se disuelve en agua?",
+        "options": {
+            "A": "Porque desaparece",
+            "B": "Porque el agua separa sus iones",
+            "C": "Porque cambia de color",
+            "D": "Porque se evapora"
+        },
+        "correct_answer": "B",
+        "explanation": "El agua rodea y separa los iones de la sal."
+    },
+    {
+        "question_number": 73,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el principal componente del aire atmosférico?",
+        "options": {
+            "A": "Oxígeno",
+            "B": "Dióxido de carbono",
+            "C": "Nitrógeno",
+            "D": "Hidrógeno"
+        },
+        "correct_answer": "C",
+        "explanation": "El nitrógeno representa aproximadamente el 78% del aire."
+    },
+    {
+        "question_number": 74,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "En una investigación sobre corrosión, ¿qué variable sería adecuada medir?",
+        "options": {
+            "A": "Cantidad de óxido formado",
+            "B": "Color del laboratorio",
+            "C": "Nombre del investigador",
+            "D": "Marca del recipiente"
+        },
+        "correct_answer": "A",
+        "explanation": "Permite cuantificar la corrosión."
+    },
+    {
+        "question_number": 75,
+        "area": "Ciencias Naturales",
+        "topic": "Quimica",
+        "level": "Dificil",
+        "question_text": "¿Qué ocurre cuando un ácido reacciona con una base?",
+        "options": {
+            "A": "Se forma una reacción de neutralización",
+            "B": "Se produce una combustión",
+            "C": "Se crea materia",
+            "D": "Se destruye energía"
+        },
+        "correct_answer": "A",
+        "explanation": "Ácido + base producen una reacción de neutralización."
+    },
+    {
+        "question_number": 76,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Facil",
+        "question_text": "¿Qué estudia la ecología?",
+        "options": {
+            "A": "Los planetas",
+            "B": "Las reacciones químicas",
+            "C": "Las relaciones entre los seres vivos y su ambiente",
+            "D": "La estructura de los átomos"
+        },
+        "correct_answer": "C",
+        "explanation": "La ecología estudia las interacciones entre organismos y ambiente."
+    },
+    {
+        "question_number": 77,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Facil",
+        "question_text": "¿Cuál de los siguientes es un productor?",
+        "options": {
+            "A": "León",
+            "B": "Hongo",
+            "C": "Árbol",
+            "D": "Águila"
+        },
+        "correct_answer": "C",
+        "explanation": "Las plantas producen su propio alimento."
+    },
+    {
+        "question_number": 78,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Facil",
+        "question_text": "¿Qué organismo se alimenta de otros organismos?",
+        "options": {
+            "A": "Productor",
+            "B": "Consumidor",
+            "C": "Autótrofo",
+            "D": "Alga"
+        },
+        "correct_answer": "B",
+        "explanation": "Los consumidores obtienen energía de otros seres vivos."
+    },
+    {
+        "question_number": 79,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Facil",
+        "question_text": "¿Cuál es la principal fuente de energía en los ecosistemas?",
+        "options": {
+            "A": "La Luna",
+            "B": "El Sol",
+            "C": "El viento",
+            "D": "Los volcanes"
+        },
+        "correct_answer": "B",
+        "explanation": "La energía solar inicia la mayoría de cadenas alimentarias."
+    },
+    {
+        "question_number": 80,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Facil",
+        "question_text": "¿Qué son los descomponedores?",
+        "options": {
+            "A": "Organismos que producen oxígeno",
+            "B": "Organismos que degradan materia orgánica",
+            "C": "Animales carnívoros",
+            "D": "Plantas acuáticas"
+        },
+        "correct_answer": "B",
+        "explanation": "Hongos y bacterias reciclan materia orgánica."
+    },
+    {
+        "question_number": 81,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Medio",
+        "question_text": "Si desaparecen los productores de un ecosistema, ¿qué ocurrirá primero?",
+        "options": {
+            "A": "Aumentarán los consumidores",
+            "B": "Se reducirá la disponibilidad de energía",
+            "C": "Aumentará la biodiversidad",
+            "D": "No habrá cambios"
+        },
+        "correct_answer": "B",
+        "explanation": "Los productores son la base energética del ecosistema."
+    },
+    {
+        "question_number": 82,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Medio",
+        "question_text": "¿Qué es una población?",
+        "options": {
+            "A": "Todos los seres vivos del planeta",
+            "B": "Organismos de diferentes especies",
+            "C": "Individuos de la misma especie en una zona",
+            "D": "Solo animales"
+        },
+        "correct_answer": "C",
+        "explanation": "Una población está formada por individuos de una misma especie."
+    },
+    {
+        "question_number": 83,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Medio",
+        "question_text": "¿Qué es una comunidad ecológica?",
+        "options": {
+            "A": "Una sola especie",
+            "B": "Varias poblaciones que interactúan",
+            "C": "Solo plantas",
+            "D": "Un ecosistema acuático"
+        },
+        "correct_answer": "B",
+        "explanation": "Las comunidades están formadas por diferentes poblaciones."
+    },
+    {
+        "question_number": 84,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Medio",
+        "question_text": "¿Por qué la deforestación afecta la biodiversidad?",
+        "options": {
+            "A": "Aumenta los hábitats",
+            "B": "Destruye hábitats naturales",
+            "C": "Incrementa el oxígeno",
+            "D": "Reduce la temperatura"
+        },
+        "correct_answer": "B",
+        "explanation": "Muchas especies dependen de esos hábitats."
+    },
+    {
+        "question_number": 85,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Medio",
+        "question_text": "Si aumenta la cantidad de alimento disponible para una población, probablemente:",
+        "options": {
+            "A": "Disminuya la población",
+            "B": "Aumente la población",
+            "C": "Desaparezca la especie",
+            "D": "No ocurra nada"
+        },
+        "correct_answer": "B",
+        "explanation": "Más recursos suelen favorecer el crecimiento poblacional."
+    },
+    {
+        "question_number": 86,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué efecto tiene el aumento de gases de efecto invernadero?",
+        "options": {
+            "A": "Disminuye la temperatura global",
+            "B": "Aumenta el calentamiento global",
+            "C": "Reduce la radiación solar",
+            "D": "Detiene el clima"
+        },
+        "correct_answer": "B",
+        "explanation": "Estos gases retienen calor en la atmósfera."
+    },
+    {
+        "question_number": 87,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué ciclo biogeoquímico está directamente relacionado con la fotosíntesis?",
+        "options": {
+            "A": "Carbono",
+            "B": "Hierro",
+            "C": "Oro",
+            "D": "Plomo"
+        },
+        "correct_answer": "A",
+        "explanation": "La fotosíntesis captura carbono atmosférico."
+    },
+    {
+        "question_number": 88,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "Un investigador analiza cómo cambia una población de peces después de la contaminación de un río. ¿Cuál es la variable dependiente?",
+        "options": {
+            "A": "La contaminación",
+            "B": "La cantidad de peces",
+            "C": "El río",
+            "D": "La temperatura"
+        },
+        "correct_answer": "B",
+        "explanation": "Es la variable que se mide como resultado."
+    },
+    {
+        "question_number": 89,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué puede ocurrir cuando una especie invasora entra a un ecosistema?",
+        "options": {
+            "A": "No genera cambios",
+            "B": "Puede desplazar especies nativas",
+            "C": "Produce más lluvia",
+            "D": "Aumenta automáticamente la biodiversidad"
+        },
+        "correct_answer": "B",
+        "explanation": "Las especies invasoras compiten por recursos."
+    },
+    {
+        "question_number": 90,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué representa una cadena alimentaria?",
+        "options": {
+            "A": "La distribución de agua",
+            "B": "El flujo de energía entre organismos",
+            "C": "La formación de rocas",
+            "D": "El movimiento de nubes"
+        },
+        "correct_answer": "B",
+        "explanation": "Muestra cómo se transfiere energía."
+    },
+    {
+        "question_number": 91,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Por qué la pérdida de biodiversidad preocupa a los científicos?",
+        "options": {
+            "A": "Reduce la estabilidad de los ecosistemas",
+            "B": "Produce más oxígeno",
+            "C": "Aumenta los recursos",
+            "D": "Mejora la adaptación"
+        },
+        "correct_answer": "A",
+        "explanation": "La biodiversidad contribuye a la resiliencia ecológica."
+    },
+    {
+        "question_number": 92,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué es un nicho ecológico?",
+        "options": {
+            "A": "El lugar físico donde vive una especie",
+            "B": "La función que cumple una especie en el ecosistema",
+            "C": "Una cadena alimentaria",
+            "D": "Un ecosistema acuático"
+        },
+        "correct_answer": "B",
+        "explanation": "Describe el papel ecológico de una especie."
+    },
+    {
+        "question_number": 93,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "Si se reduce la cantidad de depredadores en un ecosistema, inicialmente las presas podrían:",
+        "options": {
+            "A": "Disminuir",
+            "B": "Aumentar",
+            "C": "Desaparecer",
+            "D": "No cambiar"
+        },
+        "correct_answer": "B",
+        "explanation": "La presión de depredación disminuye."
+    },
+    {
+        "question_number": 94,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué efecto tiene la contaminación del agua sobre los ecosistemas acuáticos?",
+        "options": {
+            "A": "Aumenta la biodiversidad",
+            "B": "Puede causar muerte de organismos",
+            "C": "Produce más oxígeno",
+            "D": "No afecta a los peces"
+        },
+        "correct_answer": "B",
+        "explanation": "La contaminación altera las condiciones de vida."
+    },
+    {
+        "question_number": 95,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el principal reservorio de agua dulce del planeta?",
+        "options": {
+            "A": "Ríos",
+            "B": "Lagos",
+            "C": "Glaciares y casquetes polares",
+            "D": "Nubes"
+        },
+        "correct_answer": "C",
+        "explanation": "La mayor parte del agua dulce está congelada."
+    },
+    {
+        "question_number": 96,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué ocurre cuando aumenta excesivamente la concentración de nutrientes en un lago?",
+        "options": {
+            "A": "Disminuye la producción biológica",
+            "B": "Puede producir eutrofización",
+            "C": "Aumenta el oxígeno indefinidamente",
+            "D": "Se vuelve agua potable"
+        },
+        "correct_answer": "B",
+        "explanation": "El exceso de nutrientes favorece proliferaciones algales."
+    },
+    {
+        "question_number": 97,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "En un estudio sobre calidad del aire, ¿cuál sería una variable cuantificable adecuada?",
+        "options": {
+            "A": "Cantidad de partículas contaminantes",
+            "B": "Color favorito del investigador",
+            "C": "Nombre de la ciudad",
+            "D": "Número de laboratorios"
+        },
+        "correct_answer": "A",
+        "explanation": "Permite medir objetivamente la contaminación."
+    },
+    {
+        "question_number": 98,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Qué se entiende por desarrollo sostenible?",
+        "options": {
+            "A": "Uso ilimitado de recursos",
+            "B": "Crecimiento económico sin control",
+            "C": "Satisfacer necesidades actuales sin comprometer las futuras",
+            "D": "Reducir toda actividad humana"
+        },
+        "correct_answer": "C",
+        "explanation": "Es la definición aceptada de sostenibilidad."
+    },
+    {
+        "question_number": 99,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Por qué los manglares son ecosistemas importantes?",
+        "options": {
+            "A": "Solo producen madera",
+            "B": "Protegen costas y sirven de refugio a numerosas especies",
+            "C": "Evitan toda erosión mundial",
+            "D": "No tienen biodiversidad"
+        },
+        "correct_answer": "B",
+        "explanation": "Los manglares son ecosistemas altamente productivos."
+    },
+    {
+        "question_number": 100,
+        "area": "Ciencias Naturales",
+        "topic": "Ecologia",
+        "level": "Dificil",
+        "question_text": "¿Cuál es una acción efectiva para reducir el impacto ambiental individual?",
+        "options": {
+            "A": "Incrementar residuos",
+            "B": "Consumir más combustibles fósiles",
+            "C": "Reducir, reutilizar y reciclar",
+            "D": "Desperdiciar agua"
+        },
+        "correct_answer": "C",
+        "explanation": "La regla de las 3R reduce el impacto ambiental."
+    }
+]

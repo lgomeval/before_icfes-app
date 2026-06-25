@@ -1,0 +1,1502 @@
+[
+    {
+        "question_number": 1,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "What is the Spanish meaning of the word 'book'?",
+        "options": {
+            "A": "Libro",
+            "B": "Mesa",
+            "C": "Casa",
+            "D": "Puerta"
+        },
+        "correct_answer": "A",
+        "explanation": "Book significa libro."
+    },
+    {
+        "question_number": 2,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "Choose the correct translation for 'school'.",
+        "options": {
+            "A": "Hospital",
+            "B": "Escuela",
+            "C": "Biblioteca",
+            "D": "Parque"
+        },
+        "correct_answer": "B",
+        "explanation": "School significa escuela."
+    },
+    {
+        "question_number": 3,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "Which word means 'perro'?",
+        "options": {
+            "A": "Bird",
+            "B": "Fish",
+            "C": "Dog",
+            "D": "Cat"
+        },
+        "correct_answer": "C",
+        "explanation": "Dog significa perro."
+    },
+    {
+        "question_number": 4,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "What is the meaning of 'happy'?",
+        "options": {
+            "A": "Triste",
+            "B": "Enojado",
+            "C": "Feliz",
+            "D": "Cansado"
+        },
+        "correct_answer": "C",
+        "explanation": "Happy significa feliz."
+    },
+    {
+        "question_number": 5,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "Choose the correct translation of 'house'.",
+        "options": {
+            "A": "Casa",
+            "B": "Carro",
+            "C": "Ventana",
+            "D": "Silla"
+        },
+        "correct_answer": "A",
+        "explanation": "House significa casa."
+    },
+    {
+        "question_number": 6,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "What is the opposite of 'big'?",
+        "options": {
+            "A": "Large",
+            "B": "Tall",
+            "C": "Small",
+            "D": "Heavy"
+        },
+        "correct_answer": "C",
+        "explanation": "Small es el antónimo de big."
+    },
+    {
+        "question_number": 7,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Facil",
+        "question_text": "Which word means 'agua'?",
+        "options": {
+            "A": "Milk",
+            "B": "Water",
+            "C": "Juice",
+            "D": "Coffee"
+        },
+        "correct_answer": "B",
+        "explanation": "Water significa agua."
+    },
+    {
+        "question_number": 8,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "The word 'teacher' refers to a person who:",
+        "options": {
+            "A": "Drives a bus",
+            "B": "Teaches students",
+            "C": "Builds houses",
+            "D": "Sells food"
+        },
+        "correct_answer": "B",
+        "explanation": "A teacher is a person who teaches."
+    },
+    {
+        "question_number": 9,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Choose the synonym of 'begin'.",
+        "options": {
+            "A": "Start",
+            "B": "Stop",
+            "C": "End",
+            "D": "Close"
+        },
+        "correct_answer": "A",
+        "explanation": "Begin y start tienen el mismo significado."
+    },
+    {
+        "question_number": 10,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Which word best completes the sentence? 'I am thirsty. I need some ____.'",
+        "options": {
+            "A": "Water",
+            "B": "Chair",
+            "C": "Book",
+            "D": "Phone"
+        },
+        "correct_answer": "A",
+        "explanation": "Una persona con sed necesita agua."
+    },
+    {
+        "question_number": 11,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "She go to school",
+            "B": "She goes to school",
+            "C": "She going school",
+            "D": "She gone school"
+        },
+        "correct_answer": "B",
+        "explanation": "En tercera persona singular se usa goes."
+    },
+    {
+        "question_number": 12,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_text": "Complete: I ____ a student.",
+        "options": {
+            "A": "is",
+            "B": "am",
+            "C": "are",
+            "D": "be"
+        },
+        "correct_answer": "B",
+        "explanation": "I se acompaña con am."
+    },
+    {
+        "question_number": 13,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_text": "Complete: They ____ playing soccer.",
+        "options": {
+            "A": "is",
+            "B": "am",
+            "C": "are",
+            "D": "be"
+        },
+        "correct_answer": "C",
+        "explanation": "They se usa con are."
+    },
+    {
+        "question_number": 14,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_text": "Choose the correct pronoun: Maria is my friend. ____ is kind.",
+        "options": {
+            "A": "He",
+            "B": "She",
+            "C": "It",
+            "D": "They"
+        },
+        "correct_answer": "B",
+        "explanation": "Maria es femenino singular."
+    },
+    {
+        "question_number": 15,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Facil",
+        "question_text": "Complete: We ____ in Colombia.",
+        "options": {
+            "A": "live",
+            "B": "lives",
+            "C": "living",
+            "D": "liveds"
+        },
+        "correct_answer": "A",
+        "explanation": "Con we se usa la forma base del verbo."
+    },
+    {
+        "question_number": 16,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "He don't like pizza",
+            "B": "He doesn't likes pizza",
+            "C": "He doesn't like pizza",
+            "D": "He not like pizza"
+        },
+        "correct_answer": "C",
+        "explanation": "La estructura correcta es doesn't + verbo base."
+    },
+    {
+        "question_number": 17,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Complete: Yesterday I ____ to the park.",
+        "options": {
+            "A": "go",
+            "B": "went",
+            "C": "gone",
+            "D": "going"
+        },
+        "correct_answer": "B",
+        "explanation": "Went es el pasado de go."
+    },
+    {
+        "question_number": 18,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct option: There ____ many books on the table.",
+        "options": {
+            "A": "is",
+            "B": "are",
+            "C": "am",
+            "D": "be"
+        },
+        "correct_answer": "B",
+        "explanation": "Books es plural."
+    },
+    {
+        "question_number": 19,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Complete: My brother ____ TV every night.",
+        "options": {
+            "A": "watch",
+            "B": "watches",
+            "C": "watching",
+            "D": "watched"
+        },
+        "correct_answer": "B",
+        "explanation": "Tercera persona singular."
+    },
+    {
+        "question_number": 20,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Which sentence is correct?",
+        "options": {
+            "A": "They is happy",
+            "B": "They are happy",
+            "C": "They am happy",
+            "D": "They be happy"
+        },
+        "correct_answer": "B",
+        "explanation": "They se usa con are."
+    },
+    {
+        "question_number": 21,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Complete: I have ____ apple.",
+        "options": {
+            "A": "a",
+            "B": "an",
+            "C": "the",
+            "D": "some"
+        },
+        "correct_answer": "B",
+        "explanation": "Apple inicia con sonido vocálico."
+    },
+    {
+        "question_number": 22,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct question.",
+        "options": {
+            "A": "Where you live?",
+            "B": "Where do you live?",
+            "C": "Where does you live?",
+            "D": "Where are live?"
+        },
+        "correct_answer": "B",
+        "explanation": "Pregunta correcta en presente simple."
+    },
+    {
+        "question_number": 23,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Complete: If it rains, we ____ at home.",
+        "options": {
+            "A": "stay",
+            "B": "stays",
+            "C": "stayed",
+            "D": "staying"
+        },
+        "correct_answer": "A",
+        "explanation": "Primer condicional."
+    },
+    {
+        "question_number": 24,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "She has finished her homework",
+            "B": "She have finished her homework",
+            "C": "She finished has homework",
+            "D": "She finishing homework"
+        },
+        "correct_answer": "A",
+        "explanation": "Present perfect con tercera persona."
+    },
+    {
+        "question_number": 25,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Complete: By next year, I ____ English for five years.",
+        "options": {
+            "A": "study",
+            "B": "studied",
+            "C": "will have studied",
+            "D": "am studying"
+        },
+        "correct_answer": "C",
+        "explanation": "Future perfect."
+    },
+    {
+        "question_number": 26,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Choose the word that best completes the sentence: 'The weather is very hot today, so I need a ____.'",
+        "options": {
+            "A": "jacket",
+            "B": "scarf",
+            "C": "fan",
+            "D": "blanket"
+        },
+        "correct_answer": "C",
+        "explanation": "A fan helps when the weather is hot."
+    },
+    {
+        "question_number": 27,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Which word is closest in meaning to 'intelligent'?",
+        "options": {
+            "A": "Smart",
+            "B": "Lazy",
+            "C": "Weak",
+            "D": "Slow"
+        },
+        "correct_answer": "A",
+        "explanation": "Smart is a synonym of intelligent."
+    },
+    {
+        "question_number": 28,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "A person who designs buildings is called:",
+        "options": {
+            "A": "Doctor",
+            "B": "Architect",
+            "C": "Teacher",
+            "D": "Farmer"
+        },
+        "correct_answer": "B",
+        "explanation": "An architect designs buildings."
+    },
+    {
+        "question_number": 29,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Choose the correct meaning of 'borrow'.",
+        "options": {
+            "A": "To give something permanently",
+            "B": "To take something temporarily",
+            "C": "To buy something",
+            "D": "To destroy something"
+        },
+        "correct_answer": "B",
+        "explanation": "Borrow means taking something for a limited time."
+    },
+    {
+        "question_number": 30,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Medio",
+        "question_text": "Which word completes the sentence? 'My grandfather is 80 years old. He is ____.'",
+        "options": {
+            "A": "young",
+            "B": "elderly",
+            "C": "childish",
+            "D": "newborn"
+        },
+        "correct_answer": "B",
+        "explanation": "Elderly refers to an older person."
+    },
+    {
+        "question_number": 31,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Dificil",
+        "question_text": "Choose the antonym of 'ancient'.",
+        "options": {
+            "A": "Historic",
+            "B": "Old",
+            "C": "Modern",
+            "D": "Traditional"
+        },
+        "correct_answer": "C",
+        "explanation": "Modern is the opposite of ancient."
+    },
+    {
+        "question_number": 32,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Dificil",
+        "question_text": "The word 'achievement' is closest in meaning to:",
+        "options": {
+            "A": "Failure",
+            "B": "Success",
+            "C": "Problem",
+            "D": "Accident"
+        },
+        "correct_answer": "B",
+        "explanation": "Achievement refers to something successfully accomplished."
+    },
+    {
+        "question_number": 33,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Dificil",
+        "question_text": "Which word best describes someone who always tells the truth?",
+        "options": {
+            "A": "Honest",
+            "B": "Selfish",
+            "C": "Nervous",
+            "D": "Careless"
+        },
+        "correct_answer": "A",
+        "explanation": "Honest people tell the truth."
+    },
+    {
+        "question_number": 34,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Dificil",
+        "question_text": "Choose the best word: 'The scientist made an important ____.'",
+        "options": {
+            "A": "discovery",
+            "B": "vacation",
+            "C": "mistake",
+            "D": "purchase"
+        },
+        "correct_answer": "A",
+        "explanation": "Scientists make discoveries."
+    },
+    {
+        "question_number": 35,
+        "area": "Ingles",
+        "topic": "Vocabulary",
+        "level": "Dificil",
+        "question_text": "Which word means 'to continue despite difficulties'?",
+        "options": {
+            "A": "Quit",
+            "B": "Persevere",
+            "C": "Forget",
+            "D": "Avoid"
+        },
+        "correct_answer": "B",
+        "explanation": "Persevere means to continue despite obstacles."
+    },
+    {
+        "question_number": 36,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "She can sings well",
+            "B": "She can sing well",
+            "C": "She can singing well",
+            "D": "She can to sing well"
+        },
+        "correct_answer": "B",
+        "explanation": "After modal verbs we use the base form."
+    },
+    {
+        "question_number": 37,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Complete: There isn't ____ milk in the fridge.",
+        "options": {
+            "A": "many",
+            "B": "some",
+            "C": "any",
+            "D": "few"
+        },
+        "correct_answer": "C",
+        "explanation": "Any is used in negative sentences."
+    },
+    {
+        "question_number": 38,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct comparative form of 'good'.",
+        "options": {
+            "A": "gooder",
+            "B": "more good",
+            "C": "better",
+            "D": "best"
+        },
+        "correct_answer": "C",
+        "explanation": "Better is the comparative form of good."
+    },
+    {
+        "question_number": 39,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Complete: This book is ____ than that one.",
+        "options": {
+            "A": "interesting",
+            "B": "more interesting",
+            "C": "most interesting",
+            "D": "interest"
+        },
+        "correct_answer": "B",
+        "explanation": "Long adjectives use more + adjective."
+    },
+    {
+        "question_number": 40,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Medio",
+        "question_text": "Choose the correct option: I have lived here ____ 2018.",
+        "options": {
+            "A": "for",
+            "B": "since",
+            "C": "during",
+            "D": "from"
+        },
+        "correct_answer": "B",
+        "explanation": "Since is used with a starting point in time."
+    },
+    {
+        "question_number": 41,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "If I ____ enough money, I would travel the world.",
+        "options": {
+            "A": "have",
+            "B": "had",
+            "C": "will have",
+            "D": "having"
+        },
+        "correct_answer": "B",
+        "explanation": "Second conditional uses past simple."
+    },
+    {
+        "question_number": 42,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the passive voice sentence.",
+        "options": {
+            "A": "John wrote the letter",
+            "B": "The letter was written by John",
+            "C": "John is writing the letter",
+            "D": "John writes letters"
+        },
+        "correct_answer": "B",
+        "explanation": "Passive voice focuses on the action."
+    },
+    {
+        "question_number": 43,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "I wish I am taller",
+            "B": "I wish I was taller",
+            "C": "I wish I were taller",
+            "D": "B and C"
+        },
+        "correct_answer": "D",
+        "explanation": "In formal English, 'were' is preferred."
+    },
+    {
+        "question_number": 44,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "By the time we arrived, the movie ____.",
+        "options": {
+            "A": "starts",
+            "B": "started",
+            "C": "had started",
+            "D": "has started"
+        },
+        "correct_answer": "C",
+        "explanation": "Past perfect for an earlier past action."
+    },
+    {
+        "question_number": 45,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct reported speech.",
+        "options": {
+            "A": "She said she is tired",
+            "B": "She said she was tired",
+            "C": "She says she tired",
+            "D": "She told she tired"
+        },
+        "correct_answer": "B",
+        "explanation": "Reported speech requires tense backshift."
+    },
+    {
+        "question_number": 46,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Which sentence is grammatically correct?",
+        "options": {
+            "A": "Neither of the students are absent",
+            "B": "Neither of the students is absent",
+            "C": "Neither students are absent",
+            "D": "Neither student absent"
+        },
+        "correct_answer": "B",
+        "explanation": "Neither is treated as singular."
+    },
+    {
+        "question_number": 47,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct connector: 'I studied hard; ____, I passed the exam.'",
+        "options": {
+            "A": "however",
+            "B": "therefore",
+            "C": "although",
+            "D": "unless"
+        },
+        "correct_answer": "B",
+        "explanation": "Therefore expresses consequence."
+    },
+    {
+        "question_number": 48,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Select the correct sentence.",
+        "options": {
+            "A": "The information are useful",
+            "B": "The information is useful",
+            "C": "The informations are useful",
+            "D": "Informations is useful"
+        },
+        "correct_answer": "B",
+        "explanation": "Information is an uncountable noun."
+    },
+    {
+        "question_number": 49,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct sentence.",
+        "options": {
+            "A": "He has been working all day",
+            "B": "He have been working all day",
+            "C": "He has working all day",
+            "D": "He been working all day"
+        },
+        "correct_answer": "A",
+        "explanation": "Present perfect continuous."
+    },
+    {
+        "question_number": 50,
+        "area": "Ingles",
+        "topic": "Grammar",
+        "level": "Dificil",
+        "question_text": "Choose the correct relative pronoun: 'The woman ____ called yesterday is my aunt.'",
+        "options": {
+            "A": "which",
+            "B": "where",
+            "C": "who",
+            "D": "whose"
+        },
+        "correct_answer": "C",
+        "explanation": "Who is used for people."
+    },
+    {
+        "question_number": 51,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Facil",
+        "question_text": "Read the text: 'Tom goes to school every day by bus.' How does Tom go to school?",
+        "options": {
+            "A": "By car",
+            "B": "By bicycle",
+            "C": "By bus",
+            "D": "On foot"
+        },
+        "correct_answer": "C",
+        "explanation": "The text says Tom goes by bus."
+    },
+    {
+        "question_number": 52,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Facil",
+        "question_text": "Read: 'Sarah likes apples, oranges and bananas.' What fruit does Sarah like?",
+        "options": {
+            "A": "Bananas",
+            "B": "Grapes",
+            "C": "Pears",
+            "D": "Mangoes"
+        },
+        "correct_answer": "A",
+        "explanation": "Bananas are mentioned in the text."
+    },
+    {
+        "question_number": 53,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Facil",
+        "question_text": "Read: 'The library opens at 8:00 a.m.' At what time does the library open?",
+        "options": {
+            "A": "7:00 a.m.",
+            "B": "8:00 a.m.",
+            "C": "9:00 a.m.",
+            "D": "10:00 a.m."
+        },
+        "correct_answer": "B",
+        "explanation": "The text states 8:00 a.m."
+    },
+    {
+        "question_number": 54,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Facil",
+        "question_text": "Read: 'My brother is a doctor and works in a hospital.' Where does he work?",
+        "options": {
+            "A": "School",
+            "B": "Office",
+            "C": "Hospital",
+            "D": "Store"
+        },
+        "correct_answer": "C",
+        "explanation": "Doctors work in hospitals."
+    },
+    {
+        "question_number": 55,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Facil",
+        "question_text": "Read: 'Emma studies English because she wants to travel.' Why does Emma study English?",
+        "options": {
+            "A": "To teach",
+            "B": "To travel",
+            "C": "To sleep",
+            "D": "To work at home"
+        },
+        "correct_answer": "B",
+        "explanation": "The text explicitly states the reason."
+    },
+    {
+        "question_number": 56,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'Mark trained every day for six months. Finally, he won the competition.' Why did Mark win?",
+        "options": {
+            "A": "He was lucky",
+            "B": "He trained consistently",
+            "C": "The competition was canceled",
+            "D": "He knew the judges"
+        },
+        "correct_answer": "B",
+        "explanation": "The text links his success to his training."
+    },
+    {
+        "question_number": 57,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'The restaurant was closed, so we decided to eat at home.' Why did they eat at home?",
+        "options": {
+            "A": "They preferred home food",
+            "B": "They had no money",
+            "C": "The restaurant was closed",
+            "D": "They were sick"
+        },
+        "correct_answer": "C",
+        "explanation": "The cause is stated directly."
+    },
+    {
+        "question_number": 58,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'Laura forgot her umbrella. When she arrived home, her clothes were wet.' What can be inferred?",
+        "options": {
+            "A": "It was windy",
+            "B": "It was raining",
+            "C": "She went swimming",
+            "D": "She washed her clothes"
+        },
+        "correct_answer": "B",
+        "explanation": "Wet clothes and no umbrella suggest rain."
+    },
+    {
+        "question_number": 59,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'David reads science books because he wants to become an engineer.' What is David's goal?",
+        "options": {
+            "A": "Become a teacher",
+            "B": "Become an engineer",
+            "C": "Become a writer",
+            "D": "Become a doctor"
+        },
+        "correct_answer": "B",
+        "explanation": "The goal is explicitly stated."
+    },
+    {
+        "question_number": 60,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'The museum offers free admission every Sunday.' When can people enter for free?",
+        "options": {
+            "A": "Monday",
+            "B": "Friday",
+            "C": "Saturday",
+            "D": "Sunday"
+        },
+        "correct_answer": "D",
+        "explanation": "Sunday is mentioned as free admission day."
+    },
+    {
+        "question_number": 61,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'After studying all night, Julia felt exhausted during the exam.' What does exhausted mean?",
+        "options": {
+            "A": "Happy",
+            "B": "Tired",
+            "C": "Confused",
+            "D": "Angry"
+        },
+        "correct_answer": "B",
+        "explanation": "Exhausted means extremely tired."
+    },
+    {
+        "question_number": 62,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Medio",
+        "question_text": "Read: 'Many students use bicycles because they are cheap and environmentally friendly.' Why do students use bicycles?",
+        "options": {
+            "A": "They are expensive",
+            "B": "They are fashionable",
+            "C": "They are cheap and eco-friendly",
+            "D": "They are faster than airplanes"
+        },
+        "correct_answer": "C",
+        "explanation": "The text gives both reasons."
+    },
+    {
+        "question_number": 63,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Although the road was difficult, the hikers continued until they reached the summit.' What does this suggest about the hikers?",
+        "options": {
+            "A": "They were careless",
+            "B": "They were determined",
+            "C": "They were lost",
+            "D": "They were inexperienced"
+        },
+        "correct_answer": "B",
+        "explanation": "Continuing despite difficulty shows determination."
+    },
+    {
+        "question_number": 64,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The company reduced plastic packaging to decrease environmental impact.' What was the company's purpose?",
+        "options": {
+            "A": "Increase sales",
+            "B": "Reduce environmental damage",
+            "C": "Hire more workers",
+            "D": "Raise prices"
+        },
+        "correct_answer": "B",
+        "explanation": "The purpose is explicitly stated."
+    },
+    {
+        "question_number": 65,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Despite several failures, the inventor kept improving his design.' Which quality best describes the inventor?",
+        "options": {
+            "A": "Patience",
+            "B": "Curiosity",
+            "C": "Perseverance",
+            "D": "Luck"
+        },
+        "correct_answer": "C",
+        "explanation": "Continuing after failures shows perseverance."
+    },
+    {
+        "question_number": 66,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The article argues that renewable energy is essential for future sustainability.' What is the main idea?",
+        "options": {
+            "A": "Energy is expensive",
+            "B": "Renewable energy is important for the future",
+            "C": "Oil is unlimited",
+            "D": "Technology is unnecessary"
+        },
+        "correct_answer": "B",
+        "explanation": "It summarizes the central message."
+    },
+    {
+        "question_number": 67,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The author criticizes excessive use of social media among teenagers.' What is the author's attitude?",
+        "options": {
+            "A": "Supportive",
+            "B": "Critical",
+            "C": "Indifferent",
+            "D": "Confused"
+        },
+        "correct_answer": "B",
+        "explanation": "The word criticizes indicates a critical attitude."
+    },
+    {
+        "question_number": 68,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Scientists predict that sea levels will continue rising if global temperatures increase.' What is the relationship between the two events?",
+        "options": {
+            "A": "Comparison",
+            "B": "Cause and effect",
+            "C": "Sequence",
+            "D": "Contrast"
+        },
+        "correct_answer": "B",
+        "explanation": "Rising temperatures cause sea level increase."
+    },
+    {
+        "question_number": 69,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The new policy was controversial, but many experts believed it would improve education.' What can be inferred?",
+        "options": {
+            "A": "Everyone supported the policy",
+            "B": "The policy had both critics and supporters",
+            "C": "The policy failed immediately",
+            "D": "Experts opposed the policy"
+        },
+        "correct_answer": "B",
+        "explanation": "Controversial implies disagreement."
+    },
+    {
+        "question_number": 70,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The writer uses statistics throughout the article.' Why would the writer do this?",
+        "options": {
+            "A": "To entertain readers",
+            "B": "To support arguments with evidence",
+            "C": "To shorten the text",
+            "D": "To avoid explanations"
+        },
+        "correct_answer": "B",
+        "explanation": "Statistics strengthen arguments."
+    },
+    {
+        "question_number": 71,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'More cities are investing in public transportation to reduce traffic congestion and pollution.' What is the main purpose of this investment?",
+        "options": {
+            "A": "Increase traffic",
+            "B": "Reduce congestion and pollution",
+            "C": "Sell more cars",
+            "D": "Close roads"
+        },
+        "correct_answer": "B",
+        "explanation": "The purpose is stated directly in the text."
+    },
+    {
+        "question_number": 72,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The athlete followed a strict training routine and improved significantly.' What caused the improvement?",
+        "options": {
+            "A": "Luck",
+            "B": "A new coach",
+            "C": "Consistent training",
+            "D": "A shorter competition"
+        },
+        "correct_answer": "C",
+        "explanation": "The improvement resulted from the training routine."
+    },
+    {
+        "question_number": 73,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The report highlights the importance of recycling to conserve natural resources.' What is the author's purpose?",
+        "options": {
+            "A": "To criticize recycling",
+            "B": "To inform about recycling benefits",
+            "C": "To advertise products",
+            "D": "To tell a story"
+        },
+        "correct_answer": "B",
+        "explanation": "The text aims to explain benefits."
+    },
+    {
+        "question_number": 74,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'After years of research, scientists finally developed a vaccine.' Which word best describes the scientists?",
+        "options": {
+            "A": "Impatient",
+            "B": "Persistent",
+            "C": "Careless",
+            "D": "Lucky"
+        },
+        "correct_answer": "B",
+        "explanation": "Years of research suggest persistence."
+    },
+    {
+        "question_number": 75,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The article compares traditional classrooms with online learning.' What organizational pattern is used?",
+        "options": {
+            "A": "Cause and effect",
+            "B": "Comparison",
+            "C": "Chronological order",
+            "D": "Problem and solution"
+        },
+        "correct_answer": "B",
+        "explanation": "The text compares two alternatives."
+    },
+    {
+        "question_number": 76,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The town experienced severe flooding after days of heavy rain.' What was the cause of the flooding?",
+        "options": {
+            "A": "A drought",
+            "B": "Heavy rain",
+            "C": "Strong winds",
+            "D": "Construction work"
+        },
+        "correct_answer": "B",
+        "explanation": "The flooding occurred after days of rain."
+    },
+    {
+        "question_number": 77,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Experts recommend exercising regularly to improve both physical and mental health.' Which statement is supported?",
+        "options": {
+            "A": "Exercise only benefits the body",
+            "B": "Exercise only benefits the mind",
+            "C": "Exercise benefits physical and mental health",
+            "D": "Exercise is unnecessary"
+        },
+        "correct_answer": "C",
+        "explanation": "The text mentions both benefits."
+    },
+    {
+        "question_number": 78,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The writer presents several arguments against single-use plastics.' What is the writer's position?",
+        "options": {
+            "A": "Neutral",
+            "B": "In favor of single-use plastics",
+            "C": "Against single-use plastics",
+            "D": "Undecided"
+        },
+        "correct_answer": "C",
+        "explanation": "The arguments are presented against them."
+    },
+    {
+        "question_number": 79,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Although electric cars are more expensive initially, they can reduce long-term fuel costs.' What contrast is presented?",
+        "options": {
+            "A": "Price vs. comfort",
+            "B": "Initial cost vs. future savings",
+            "C": "Speed vs. safety",
+            "D": "Design vs. performance"
+        },
+        "correct_answer": "B",
+        "explanation": "The text contrasts upfront cost with later savings."
+    },
+    {
+        "question_number": 80,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The scientist's theory was initially rejected but later accepted after new evidence emerged.' What changed opinions?",
+        "options": {
+            "A": "Public pressure",
+            "B": "New evidence",
+            "C": "A new theory",
+            "D": "Political decisions"
+        },
+        "correct_answer": "B",
+        "explanation": "The acceptance occurred because of new evidence."
+    },
+    {
+        "question_number": 81,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Many students prefer online courses because they offer flexibility.' What is the main advantage mentioned?",
+        "options": {
+            "A": "Lower cost",
+            "B": "Flexibility",
+            "C": "Shorter exams",
+            "D": "Better teachers"
+        },
+        "correct_answer": "B",
+        "explanation": "Flexibility is explicitly stated."
+    },
+    {
+        "question_number": 82,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The campaign encouraged citizens to save water during the drought.' What problem was addressed?",
+        "options": {
+            "A": "Pollution",
+            "B": "Traffic",
+            "C": "Water shortage",
+            "D": "Unemployment"
+        },
+        "correct_answer": "C",
+        "explanation": "Drought implies lack of water."
+    },
+    {
+        "question_number": 83,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Researchers found a strong relationship between sleep quality and academic performance.' What is the main finding?",
+        "options": {
+            "A": "Sleep has no effect",
+            "B": "Sleep and academic performance are related",
+            "C": "Students should sleep less",
+            "D": "Only adults need sleep"
+        },
+        "correct_answer": "B",
+        "explanation": "The relationship is the key finding."
+    },
+    {
+        "question_number": 84,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The author uses examples from history to support the argument.' Why are examples included?",
+        "options": {
+            "A": "To confuse readers",
+            "B": "To provide evidence",
+            "C": "To shorten the text",
+            "D": "To avoid facts"
+        },
+        "correct_answer": "B",
+        "explanation": "Examples strengthen arguments."
+    },
+    {
+        "question_number": 85,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The community planted hundreds of trees to improve air quality.' What was the goal?",
+        "options": {
+            "A": "Increase construction",
+            "B": "Improve air quality",
+            "C": "Reduce population",
+            "D": "Create parking lots"
+        },
+        "correct_answer": "B",
+        "explanation": "The goal is explicitly stated."
+    },
+    {
+        "question_number": 86,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The government introduced new regulations to reduce carbon emissions from factories.' What was the purpose of the regulations?",
+        "options": {
+            "A": "Increase production",
+            "B": "Reduce pollution",
+            "C": "Close factories",
+            "D": "Lower salaries"
+        },
+        "correct_answer": "B",
+        "explanation": "Reducing carbon emissions helps decrease pollution."
+    },
+    {
+        "question_number": 87,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'After months of preparation, the team successfully launched the project.' What contributed to the success?",
+        "options": {
+            "A": "Luck",
+            "B": "Preparation",
+            "C": "Advertising",
+            "D": "Competition"
+        },
+        "correct_answer": "B",
+        "explanation": "The text links preparation with success."
+    },
+    {
+        "question_number": 88,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The article warns that excessive screen time may affect sleep quality.' What is the author's intention?",
+        "options": {
+            "A": "To entertain",
+            "B": "To warn",
+            "C": "To advertise",
+            "D": "To celebrate"
+        },
+        "correct_answer": "B",
+        "explanation": "The article is warning readers about a risk."
+    },
+    {
+        "question_number": 89,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Many species are threatened because their natural habitats are disappearing.' What is the main cause of the problem?",
+        "options": {
+            "A": "Climate",
+            "B": "Habitat loss",
+            "C": "Tourism",
+            "D": "Research"
+        },
+        "correct_answer": "B",
+        "explanation": "The text identifies habitat loss as the cause."
+    },
+    {
+        "question_number": 90,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The company expanded internationally after achieving strong domestic sales.' What happened first?",
+        "options": {
+            "A": "International expansion",
+            "B": "Domestic success",
+            "C": "Company closure",
+            "D": "A merger"
+        },
+        "correct_answer": "B",
+        "explanation": "The expansion happened after domestic success."
+    },
+    {
+        "question_number": 91,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Researchers continue studying renewable energy because current resources are limited.' Why is research continuing?",
+        "options": {
+            "A": "Resources are unlimited",
+            "B": "Current resources are limited",
+            "C": "Energy is unnecessary",
+            "D": "Research is cheaper"
+        },
+        "correct_answer": "B",
+        "explanation": "The limitation of resources motivates the research."
+    },
+    {
+        "question_number": 92,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The author describes the city as vibrant, innovative and diverse.' What is the author's tone?",
+        "options": {
+            "A": "Negative",
+            "B": "Neutral",
+            "C": "Positive",
+            "D": "Critical"
+        },
+        "correct_answer": "C",
+        "explanation": "The adjectives used are positive."
+    },
+    {
+        "question_number": 93,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Several experts disagree on the best solution to the problem.' What can be inferred?",
+        "options": {
+            "A": "The solution is obvious",
+            "B": "There is no discussion",
+            "C": "The issue is complex",
+            "D": "The problem was solved"
+        },
+        "correct_answer": "C",
+        "explanation": "Disagreement among experts suggests complexity."
+    },
+    {
+        "question_number": 94,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The report compares data collected over a period of twenty years.' Why is long-term data useful?",
+        "options": {
+            "A": "To identify trends",
+            "B": "To shorten reports",
+            "C": "To reduce information",
+            "D": "To avoid analysis"
+        },
+        "correct_answer": "A",
+        "explanation": "Long-term data helps reveal trends."
+    },
+    {
+        "question_number": 95,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The scientist rejected the hypothesis after examining the evidence.' What influenced the decision?",
+        "options": {
+            "A": "Opinion",
+            "B": "Evidence",
+            "C": "Tradition",
+            "D": "Popularity"
+        },
+        "correct_answer": "B",
+        "explanation": "The decision was based on evidence."
+    },
+    {
+        "question_number": 96,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The novel explores themes of identity, family and belonging.' What is the text mainly about?",
+        "options": {
+            "A": "Sports",
+            "B": "Technology",
+            "C": "Personal relationships and identity",
+            "D": "Weather"
+        },
+        "correct_answer": "C",
+        "explanation": "The themes point to identity and relationships."
+    },
+    {
+        "question_number": 97,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The article presents both advantages and disadvantages of artificial intelligence.' What is the author's approach?",
+        "options": {
+            "A": "One-sided",
+            "B": "Balanced",
+            "C": "Humorous",
+            "D": "Emotional"
+        },
+        "correct_answer": "B",
+        "explanation": "Presenting pros and cons shows balance."
+    },
+    {
+        "question_number": 98,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The mayor encouraged residents to participate in community projects.' What was the goal?",
+        "options": {
+            "A": "Reduce participation",
+            "B": "Promote community involvement",
+            "C": "Increase taxes",
+            "D": "Close public spaces"
+        },
+        "correct_answer": "B",
+        "explanation": "The mayor wanted more citizen participation."
+    },
+    {
+        "question_number": 99,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'Although the experiment failed, it provided valuable information for future research.' What can be concluded?",
+        "options": {
+            "A": "The experiment was useless",
+            "B": "Failure can still produce useful knowledge",
+            "C": "Research should stop",
+            "D": "The results were ignored"
+        },
+        "correct_answer": "B",
+        "explanation": "The text highlights learning from failure."
+    },
+    {
+        "question_number": 100,
+        "area": "Ingles",
+        "topic": "Reading",
+        "level": "Dificil",
+        "question_text": "Read: 'The editorial argues that education is the most effective tool for reducing inequality.' What is the central claim?",
+        "options": {
+            "A": "Education increases inequality",
+            "B": "Technology is more important than education",
+            "C": "Education helps reduce inequality",
+            "D": "Inequality cannot be reduced"
+        },
+        "correct_answer": "C",
+        "explanation": "The editorial explicitly argues that education reduces inequality."
+    }
+]

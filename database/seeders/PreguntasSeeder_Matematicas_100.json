@@ -1,0 +1,1502 @@
+[
+    {
+        "question_number": 1,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_text": "Un cuadrado tiene lados de 9 cm. ¿Cuál es su perímetro?",
+        "options": {
+            "A": "18 cm",
+            "B": "27 cm",
+            "C": "36 cm",
+            "D": "81 cm"
+        },
+        "correct_answer": "C",
+        "explanation": "El perímetro de un cuadrado es 4 veces la longitud del lado."
+    },
+    {
+        "question_number": 2,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_text": "¿Cuántos lados tiene un pentágono?",
+        "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "8"
+        },
+        "correct_answer": "B",
+        "explanation": "Un pentágono es un polígono de cinco lados."
+    },
+    {
+        "question_number": 3,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_text": "Un rectángulo mide 7 m de largo y 4 m de ancho. ¿Cuál es su área?",
+        "options": {
+            "A": "11 m²",
+            "B": "22 m²",
+            "C": "28 m²",
+            "D": "56 m²"
+        },
+        "correct_answer": "C",
+        "explanation": "Área = largo × ancho."
+    },
+    {
+        "question_number": 4,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_text": "¿Cuál es la medida de un ángulo recto?",
+        "options": {
+            "A": "45°",
+            "B": "90°",
+            "C": "180°",
+            "D": "360°"
+        },
+        "correct_answer": "B",
+        "explanation": "Todo ángulo recto mide 90 grados."
+    },
+    {
+        "question_number": 5,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Facil",
+        "question_text": "Un triángulo tiene base de 12 cm y altura de 5 cm. ¿Cuál es su área?",
+        "options": {
+            "A": "30 cm²",
+            "B": "60 cm²",
+            "C": "17 cm²",
+            "D": "24 cm²"
+        },
+        "correct_answer": "A",
+        "explanation": "Área = (base × altura) ÷ 2."
+    },
+    {
+        "question_number": 6,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Medio",
+        "question_text": "Si el lado de un cuadrado se duplica, ¿qué ocurre con su perímetro?",
+        "options": {
+            "A": "Se reduce a la mitad",
+            "B": "Permanece igual",
+            "C": "Se duplica",
+            "D": "Se cuadruplica"
+        },
+        "correct_answer": "C",
+        "explanation": "El perímetro depende linealmente de la longitud del lado."
+    },
+    {
+        "question_number": 7,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Medio",
+        "question_text": "Un círculo tiene radio de 8 cm. ¿Cuál es su diámetro?",
+        "options": {
+            "A": "8 cm",
+            "B": "12 cm",
+            "C": "16 cm",
+            "D": "24 cm"
+        },
+        "correct_answer": "C",
+        "explanation": "El diámetro es dos veces el radio."
+    },
+    {
+        "question_number": 8,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Medio",
+        "question_text": "La suma de los ángulos internos de un triángulo es:",
+        "options": {
+            "A": "90°",
+            "B": "180°",
+            "C": "270°",
+            "D": "360°"
+        },
+        "correct_answer": "B",
+        "explanation": "La suma de los ángulos internos de cualquier triángulo es 180°."
+    },
+    {
+        "question_number": 9,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Medio",
+        "question_text": "Un prisma rectangular mide 5 m de largo, 3 m de ancho y 2 m de alto. ¿Cuál es su volumen?",
+        "options": {
+            "A": "10 m³",
+            "B": "15 m³",
+            "C": "30 m³",
+            "D": "60 m³"
+        },
+        "correct_answer": "C",
+        "explanation": "Volumen = largo × ancho × alto."
+    },
+    {
+        "question_number": 10,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Medio",
+        "question_text": "Dos rectángulos tienen igual área. ¿Necesariamente tienen el mismo perímetro?",
+        "options": {
+            "A": "Sí",
+            "B": "No",
+            "C": "Solo si son cuadrados",
+            "D": "Depende de la altura"
+        },
+        "correct_answer": "B",
+        "explanation": "Figuras con igual área pueden tener perímetros distintos."
+    },
+    {
+        "question_number": 11,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Un triángulo rectángulo tiene catetos de 9 cm y 12 cm. ¿Cuál es la hipotenusa?",
+        "options": {
+            "A": "13 cm",
+            "B": "14 cm",
+            "C": "15 cm",
+            "D": "16 cm"
+        },
+        "correct_answer": "C",
+        "explanation": "Aplicando Pitágoras: √(9² + 12²) = 15."
+    },
+    {
+        "question_number": 12,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Un cubo tiene una arista de 5 cm. ¿Cuál es su volumen?",
+        "options": {
+            "A": "25 cm³",
+            "B": "75 cm³",
+            "C": "125 cm³",
+            "D": "250 cm³"
+        },
+        "correct_answer": "C",
+        "explanation": "Volumen = lado³."
+    },
+    {
+        "question_number": 13,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Una piscina rectangular mide 12 m de largo y 8 m de ancho. Se desea rodearla con una cerca. ¿Cuántos metros de cerca se necesitan?",
+        "options": {
+            "A": "20 m",
+            "B": "40 m",
+            "C": "96 m",
+            "D": "120 m"
+        },
+        "correct_answer": "B",
+        "explanation": "El perímetro es 2 × (12 + 8) = 40 m."
+    },
+    {
+        "question_number": 14,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Un cilindro tiene radio de 3 cm y altura de 10 cm. ¿Cuál es su volumen?",
+        "options": {
+            "A": "30π cm³",
+            "B": "60π cm³",
+            "C": "90π cm³",
+            "D": "120π cm³"
+        },
+        "correct_answer": "C",
+        "explanation": "Volumen = πr²h = π × 3² × 10."
+    },
+    {
+        "question_number": 15,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el área de un círculo de radio 4 cm?",
+        "options": {
+            "A": "8π cm²",
+            "B": "12π cm²",
+            "C": "16π cm²",
+            "D": "32π cm²"
+        },
+        "correct_answer": "C",
+        "explanation": "Área = πr² = π × 4²."
+    },
+    {
+        "question_number": 16,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Si un rectángulo tiene área de 48 m² y largo de 12 m, su ancho es:",
+        "options": {
+            "A": "2 m",
+            "B": "3 m",
+            "C": "4 m",
+            "D": "6 m"
+        },
+        "correct_answer": "C",
+        "explanation": "Ancho = área ÷ largo = 48 ÷ 12."
+    },
+    {
+        "question_number": 17,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Un rombo tiene diagonales de 10 cm y 8 cm. ¿Cuál es su área?",
+        "options": {
+            "A": "20 cm²",
+            "B": "40 cm²",
+            "C": "80 cm²",
+            "D": "100 cm²"
+        },
+        "correct_answer": "B",
+        "explanation": "Área = (D × d) \/ 2."
+    },
+    {
+        "question_number": 18,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "La suma de los ángulos internos de un cuadrilátero es:",
+        "options": {
+            "A": "180°",
+            "B": "270°",
+            "C": "360°",
+            "D": "540°"
+        },
+        "correct_answer": "C",
+        "explanation": "Todo cuadrilátero tiene 360° de suma interna."
+    },
+    {
+        "question_number": 19,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Un cubo tiene volumen de 216 cm³. ¿Cuál es la longitud de su arista?",
+        "options": {
+            "A": "4 cm",
+            "B": "5 cm",
+            "C": "6 cm",
+            "D": "8 cm"
+        },
+        "correct_answer": "C",
+        "explanation": "6³ = 216."
+    },
+    {
+        "question_number": 20,
+        "area": "Matematicas",
+        "topic": "Geometria",
+        "level": "Dificil",
+        "question_text": "Dos triángulos tienen la misma base y la misma altura. ¿Qué se puede afirmar?",
+        "options": {
+            "A": "Tienen igual perímetro",
+            "B": "Tienen igual área",
+            "C": "Son congruentes",
+            "D": "Son equiláteros"
+        },
+        "correct_answer": "B",
+        "explanation": "El área depende únicamente de la base y la altura."
+    },
+    {
+        "question_number": 21,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Facil",
+        "question_text": "Si x = 5, ¿cuál es el valor de x + 3?",
+        "options": {
+            "A": "2",
+            "B": "5",
+            "C": "8",
+            "D": "15"
+        },
+        "correct_answer": "C",
+        "explanation": "5 + 3 = 8."
+    },
+    {
+        "question_number": 22,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Facil",
+        "question_text": "Si y = 7, ¿cuál es el valor de 2y?",
+        "options": {
+            "A": "7",
+            "B": "9",
+            "C": "14",
+            "D": "21"
+        },
+        "correct_answer": "C",
+        "explanation": "2 × 7 = 14."
+    },
+    {
+        "question_number": 23,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Facil",
+        "question_text": "¿Cuál expresión representa 'el doble de un número x'?",
+        "options": {
+            "A": "x + 2",
+            "B": "2x",
+            "C": "x²",
+            "D": "x\/2"
+        },
+        "correct_answer": "B",
+        "explanation": "El doble de una cantidad se representa multiplicando por 2."
+    },
+    {
+        "question_number": 24,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Facil",
+        "question_text": "Resolver: x + 4 = 10",
+        "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "14"
+        },
+        "correct_answer": "C",
+        "explanation": "x = 10 - 4."
+    },
+    {
+        "question_number": 25,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Facil",
+        "question_text": "Resolver: 3x = 21",
+        "options": {
+            "A": "6",
+            "B": "7",
+            "C": "8",
+            "D": "9"
+        },
+        "correct_answer": "B",
+        "explanation": "x = 21 ÷ 3."
+    },
+    {
+        "question_number": 26,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Medio",
+        "question_text": "Resolver: 2x + 5 = 17",
+        "options": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "8"
+        },
+        "correct_answer": "B",
+        "explanation": "2x = 12, entonces x = 6."
+    },
+    {
+        "question_number": 27,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Medio",
+        "question_text": "¿Cuál es el valor de x² cuando x = 4?",
+        "options": {
+            "A": "8",
+            "B": "12",
+            "C": "16",
+            "D": "20"
+        },
+        "correct_answer": "C",
+        "explanation": "4² = 16."
+    },
+    {
+        "question_number": 28,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Medio",
+        "question_text": "Si x + y = 20 y x = 8, entonces y es:",
+        "options": {
+            "A": "10",
+            "B": "12",
+            "C": "14",
+            "D": "16"
+        },
+        "correct_answer": "B",
+        "explanation": "20 - 8 = 12."
+    },
+    {
+        "question_number": 29,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Medio",
+        "question_text": "Resolver: 5x - 10 = 15",
+        "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "6"
+        },
+        "correct_answer": "C",
+        "explanation": "5x = 25, x = 5."
+    },
+    {
+        "question_number": 30,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Medio",
+        "question_text": "Una camisa cuesta x pesos. Si se compran 3 camisas, el costo total es:",
+        "options": {
+            "A": "x + 3",
+            "B": "x³",
+            "C": "3x",
+            "D": "3 + x"
+        },
+        "correct_answer": "C",
+        "explanation": "Tres veces el mismo valor es 3x."
+    },
+    {
+        "question_number": 31,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Resolver: 4x + 8 = 28",
+        "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "7"
+        },
+        "correct_answer": "B",
+        "explanation": "4x = 20, entonces x = 5."
+    },
+    {
+        "question_number": 32,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Si a = 3 y b = 4, ¿cuál es el valor de a² + b²?",
+        "options": {
+            "A": "12",
+            "B": "18",
+            "C": "25",
+            "D": "49"
+        },
+        "correct_answer": "C",
+        "explanation": "3² + 4² = 9 + 16."
+    },
+    {
+        "question_number": 33,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Resolver: 3(x + 2) = 21",
+        "options": {
+            "A": "3",
+            "B": "5",
+            "C": "7",
+            "D": "9"
+        },
+        "correct_answer": "B",
+        "explanation": "x + 2 = 7, entonces x = 5."
+    },
+    {
+        "question_number": 34,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el resultado de (x + 2) cuando x = -3?",
+        "options": {
+            "A": "-5",
+            "B": "-1",
+            "C": "1",
+            "D": "5"
+        },
+        "correct_answer": "B",
+        "explanation": "-3 + 2 = -1."
+    },
+    {
+        "question_number": 35,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "La edad de Ana es x años. Si dentro de 5 años tendrá 20 años, ¿cuál es su edad actual?",
+        "options": {
+            "A": "10",
+            "B": "12",
+            "C": "15",
+            "D": "25"
+        },
+        "correct_answer": "C",
+        "explanation": "x + 5 = 20, por tanto x = 15."
+    },
+    {
+        "question_number": 36,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Resolver: 2(x - 3) = 10",
+        "options": {
+            "A": "5",
+            "B": "8",
+            "C": "10",
+            "D": "13"
+        },
+        "correct_answer": "B",
+        "explanation": "2x - 6 = 10, entonces 2x = 16 y x = 8."
+    },
+    {
+        "question_number": 37,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Si un número aumentado en 7 es igual a 25, ¿cuál es el número?",
+        "options": {
+            "A": "18",
+            "B": "20",
+            "C": "22",
+            "D": "32"
+        },
+        "correct_answer": "A",
+        "explanation": "x + 7 = 25, por lo tanto x = 18."
+    },
+    {
+        "question_number": 38,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el valor de 2a + 3 cuando a = 4?",
+        "options": {
+            "A": "8",
+            "B": "10",
+            "C": "11",
+            "D": "13"
+        },
+        "correct_answer": "C",
+        "explanation": "2(4) + 3 = 11."
+    },
+    {
+        "question_number": 39,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Resolver: x\/4 = 6",
+        "options": {
+            "A": "10",
+            "B": "18",
+            "C": "24",
+            "D": "30"
+        },
+        "correct_answer": "C",
+        "explanation": "x = 6 × 4."
+    },
+    {
+        "question_number": 40,
+        "area": "Matematicas",
+        "topic": "Algebra",
+        "level": "Dificil",
+        "question_text": "Si el doble de un número es 30, ¿cuál es el número?",
+        "options": {
+            "A": "10",
+            "B": "12",
+            "C": "15",
+            "D": "20"
+        },
+        "correct_answer": "C",
+        "explanation": "2x = 30, por tanto x = 15."
+    },
+    {
+        "question_number": 41,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Facil",
+        "question_text": "Las edades de 5 estudiantes son: 10, 12, 11, 13 y 14 años. ¿Cuál es la edad promedio?",
+        "options": {
+            "A": "11",
+            "B": "12",
+            "C": "13",
+            "D": "14"
+        },
+        "correct_answer": "B",
+        "explanation": "La suma es 60 y 60 ÷ 5 = 12."
+    },
+    {
+        "question_number": 42,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la moda del conjunto 2, 3, 3, 4, 5?",
+        "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5"
+        },
+        "correct_answer": "B",
+        "explanation": "La moda es el valor que más se repite."
+    },
+    {
+        "question_number": 43,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Facil",
+        "question_text": "¿Cuál es la mediana de 1, 2, 3, 4 y 5?",
+        "options": {
+            "A": "2",
+            "B": "2.5",
+            "C": "3",
+            "D": "4"
+        },
+        "correct_answer": "C",
+        "explanation": "La mediana es el valor central."
+    },
+    {
+        "question_number": 44,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Facil",
+        "question_text": "¿Cuál es el rango de los datos 4, 8, 10, 15?",
+        "options": {
+            "A": "7",
+            "B": "9",
+            "C": "11",
+            "D": "15"
+        },
+        "correct_answer": "C",
+        "explanation": "Rango = máximo - mínimo = 15 - 4."
+    },
+    {
+        "question_number": 45,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Facil",
+        "question_text": "¿Qué gráfico se utiliza comúnmente para representar porcentajes de un total?",
+        "options": {
+            "A": "Barras",
+            "B": "Circular",
+            "C": "Líneas",
+            "D": "Dispersión"
+        },
+        "correct_answer": "B",
+        "explanation": "Los gráficos circulares muestran partes de un total."
+    },
+    {
+        "question_number": 46,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "Las calificaciones de un estudiante fueron 3, 4, 5, 4 y 4. ¿Cuál es la moda?",
+        "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "4.5"
+        },
+        "correct_answer": "B",
+        "explanation": "La moda es el valor que más veces aparece."
+    },
+    {
+        "question_number": 47,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la mediana de los datos 2, 4, 6, 8, 10, 12, 14?",
+        "options": {
+            "A": "6",
+            "B": "7",
+            "C": "8",
+            "D": "10"
+        },
+        "correct_answer": "C",
+        "explanation": "La mediana es el valor central del conjunto ordenado."
+    },
+    {
+        "question_number": 48,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "Un grupo de 8 personas tiene edades cuya suma es 160 años. ¿Cuál es la edad promedio?",
+        "options": {
+            "A": "18",
+            "B": "20",
+            "C": "22",
+            "D": "24"
+        },
+        "correct_answer": "B",
+        "explanation": "Promedio = suma ÷ cantidad."
+    },
+    {
+        "question_number": 49,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "En una encuesta, 40 estudiantes prefieren fútbol, 30 baloncesto y 10 voleibol. ¿Qué deporte tiene mayor preferencia?",
+        "options": {
+            "A": "Baloncesto",
+            "B": "Voleibol",
+            "C": "Fútbol",
+            "D": "Todos igual"
+        },
+        "correct_answer": "C",
+        "explanation": "40 es la frecuencia más alta."
+    },
+    {
+        "question_number": 50,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "Si la moda y la mediana de un conjunto son iguales, ¿significa necesariamente que todos los datos son iguales?",
+        "options": {
+            "A": "Sí",
+            "B": "No",
+            "C": "Solo si hay tres datos",
+            "D": "Solo si la media también coincide"
+        },
+        "correct_answer": "B",
+        "explanation": "Moda y mediana pueden coincidir sin que todos los datos sean iguales."
+    },
+    {
+        "question_number": 51,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "¿Qué representa la frecuencia absoluta de un dato?",
+        "options": {
+            "A": "El porcentaje",
+            "B": "Las veces que aparece",
+            "C": "El promedio",
+            "D": "La mediana"
+        },
+        "correct_answer": "B",
+        "explanation": "La frecuencia absoluta cuenta ocurrencias."
+    },
+    {
+        "question_number": 52,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "¿Cuál es la media de 10, 15 y 20?",
+        "options": {
+            "A": "13",
+            "B": "14",
+            "C": "15",
+            "D": "16"
+        },
+        "correct_answer": "C",
+        "explanation": "(10+15+20)\/3 = 15."
+    },
+    {
+        "question_number": 53,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "En una tabla aparecen las ventas semanales: 20, 25, 30 y 25. ¿Cuál es la moda?",
+        "options": {
+            "A": "20",
+            "B": "25",
+            "C": "30",
+            "D": "100"
+        },
+        "correct_answer": "B",
+        "explanation": "25 es el valor repetido."
+    },
+    {
+        "question_number": 54,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "¿Qué gráfico es más apropiado para mostrar la evolución de una variable en el tiempo?",
+        "options": {
+            "A": "Circular",
+            "B": "Líneas",
+            "C": "Pictograma",
+            "D": "Tabla simple"
+        },
+        "correct_answer": "B",
+        "explanation": "Los gráficos de líneas muestran tendencias."
+    },
+    {
+        "question_number": 55,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Medio",
+        "question_text": "Si el promedio de cinco números es 10, ¿cuál es la suma total de los números?",
+        "options": {
+            "A": "20",
+            "B": "30",
+            "C": "40",
+            "D": "50"
+        },
+        "correct_answer": "D",
+        "explanation": "Promedio × cantidad = suma."
+    },
+    {
+        "question_number": 56,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Dificil",
+        "question_text": "Si se agrega un valor muy alto a un conjunto de datos, ¿qué medida tiende a verse más afectada?",
+        "options": {
+            "A": "Moda",
+            "B": "Media",
+            "C": "Frecuencia",
+            "D": "Categoría"
+        },
+        "correct_answer": "B",
+        "explanation": "La media es sensible a valores extremos."
+    },
+    {
+        "question_number": 57,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Dificil",
+        "question_text": "En una distribución de datos, el rango mide:",
+        "options": {
+            "A": "La tendencia central",
+            "B": "La dispersión",
+            "C": "La frecuencia",
+            "D": "La proporción"
+        },
+        "correct_answer": "B",
+        "explanation": "El rango indica qué tan dispersos están los datos."
+    },
+    {
+        "question_number": 58,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Dificil",
+        "question_text": "Un conjunto tiene media 20. Si todos los datos aumentan en 5 unidades, la nueva media será:",
+        "options": {
+            "A": "20",
+            "B": "22.5",
+            "C": "25",
+            "D": "30"
+        },
+        "correct_answer": "C",
+        "explanation": "La media aumenta en la misma cantidad."
+    },
+    {
+        "question_number": 59,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Dificil",
+        "question_text": "¿Qué medida representa el dato central cuando los datos están ordenados?",
+        "options": {
+            "A": "Moda",
+            "B": "Media",
+            "C": "Mediana",
+            "D": "Rango"
+        },
+        "correct_answer": "C",
+        "explanation": "La mediana es el valor central."
+    },
+    {
+        "question_number": 60,
+        "area": "Matematicas",
+        "topic": "Estadistica",
+        "level": "Dificil",
+        "question_text": "Dos grupos tienen el mismo promedio. ¿Significa esto que tienen exactamente los mismos datos?",
+        "options": {
+            "A": "Sí",
+            "B": "No",
+            "C": "Solo si tienen igual cantidad",
+            "D": "Solo si tienen igual moda"
+        },
+        "correct_answer": "B",
+        "explanation": "Distintos conjuntos pueden compartir el mismo promedio."
+    },
+    {
+        "question_number": 61,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Facil",
+        "question_text": "Al lanzar una moneda, ¿cuál es la probabilidad de obtener cara?",
+        "options": {
+            "A": "0",
+            "B": "1\/4",
+            "C": "1\/2",
+            "D": "1"
+        },
+        "correct_answer": "C",
+        "explanation": "Hay 2 resultados posibles y uno favorable."
+    },
+    {
+        "question_number": 62,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Facil",
+        "question_text": "Al lanzar un dado de seis caras, ¿cuál es la probabilidad de obtener un 3?",
+        "options": {
+            "A": "1\/2",
+            "B": "1\/3",
+            "C": "1\/6",
+            "D": "1\/12"
+        },
+        "correct_answer": "C",
+        "explanation": "Solo hay un resultado favorable entre seis posibles."
+    },
+    {
+        "question_number": 63,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Facil",
+        "question_text": "Una bolsa contiene 5 bolas rojas y 5 azules. ¿Cuál es la probabilidad de sacar una roja?",
+        "options": {
+            "A": "1\/10",
+            "B": "1\/5",
+            "C": "1\/2",
+            "D": "5"
+        },
+        "correct_answer": "C",
+        "explanation": "5 favorables de 10 posibles."
+    },
+    {
+        "question_number": 64,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Facil",
+        "question_text": "¿Cuál de los siguientes eventos es seguro?",
+        "options": {
+            "A": "Obtener 7 al lanzar un dado",
+            "B": "Obtener un número menor que 7 al lanzar un dado",
+            "C": "Obtener cara dos veces seguidas",
+            "D": "Sacar una carta roja de una baraja"
+        },
+        "correct_answer": "B",
+        "explanation": "Todos los resultados posibles del dado son menores que 7."
+    },
+    {
+        "question_number": 65,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Facil",
+        "question_text": "La probabilidad de un evento imposible es:",
+        "options": {
+            "A": "0",
+            "B": "1",
+            "C": "1\/2",
+            "D": "2"
+        },
+        "correct_answer": "A",
+        "explanation": "Los eventos imposibles tienen probabilidad cero."
+    },
+    {
+        "question_number": 66,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Medio",
+        "question_text": "Una urna contiene 3 bolas verdes y 7 amarillas. ¿Cuál es la probabilidad de sacar una verde?",
+        "options": {
+            "A": "3\/10",
+            "B": "7\/10",
+            "C": "1\/3",
+            "D": "1\/7"
+        },
+        "correct_answer": "A",
+        "explanation": "Hay 3 casos favorables de 10 posibles."
+    },
+    {
+        "question_number": 67,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Medio",
+        "question_text": "Si se lanza una moneda 10 veces y han salido 10 caras, la probabilidad de obtener cara en el siguiente lanzamiento es:",
+        "options": {
+            "A": "0",
+            "B": "1\/4",
+            "C": "1\/2",
+            "D": "1"
+        },
+        "correct_answer": "C",
+        "explanation": "Cada lanzamiento es independiente."
+    },
+    {
+        "question_number": 68,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Medio",
+        "question_text": "Al lanzar un dado, ¿cuál es la probabilidad de obtener un número par?",
+        "options": {
+            "A": "1\/6",
+            "B": "1\/3",
+            "C": "1\/2",
+            "D": "2\/3"
+        },
+        "correct_answer": "C",
+        "explanation": "Hay 3 números pares entre 6 posibles."
+    },
+    {
+        "question_number": 69,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Medio",
+        "question_text": "Una ruleta tiene 8 sectores iguales. Dos son rojos. ¿Cuál es la probabilidad de caer en rojo?",
+        "options": {
+            "A": "1\/8",
+            "B": "1\/4",
+            "C": "1\/2",
+            "D": "3\/4"
+        },
+        "correct_answer": "B",
+        "explanation": "2 de los 8 sectores son rojos."
+    },
+    {
+        "question_number": 70,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Medio",
+        "question_text": "Si la probabilidad de lluvia es 80%, esto significa que:",
+        "options": {
+            "A": "Lloverá con seguridad",
+            "B": "No lloverá",
+            "C": "Es muy probable que llueva",
+            "D": "La lluvia es imposible"
+        },
+        "correct_answer": "C",
+        "explanation": "80% indica alta probabilidad, no certeza."
+    },
+    {
+        "question_number": 71,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Una bolsa contiene 4 bolas rojas, 3 verdes y 3 azules. ¿Cuál es la probabilidad de sacar una azul?",
+        "options": {
+            "A": "3\/10",
+            "B": "4\/10",
+            "C": "1\/2",
+            "D": "7\/10"
+        },
+        "correct_answer": "A",
+        "explanation": "Hay 3 bolas azules de un total de 10."
+    },
+    {
+        "question_number": 72,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "¿Cuál de los siguientes eventos tiene mayor probabilidad?",
+        "options": {
+            "A": "Sacar un as de una baraja",
+            "B": "Obtener un número menor que 5 en un dado",
+            "C": "Obtener dos caras seguidas",
+            "D": "Sacar una carta específica"
+        },
+        "correct_answer": "B",
+        "explanation": "4 resultados favorables de 6 posibles."
+    },
+    {
+        "question_number": 73,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Si un evento tiene probabilidad 0.25, ¿qué porcentaje representa?",
+        "options": {
+            "A": "2.5%",
+            "B": "25%",
+            "C": "50%",
+            "D": "75%"
+        },
+        "correct_answer": "B",
+        "explanation": "0.25 equivale al 25%."
+    },
+    {
+        "question_number": 74,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Al lanzar dos monedas, ¿cuál es la probabilidad de obtener dos caras?",
+        "options": {
+            "A": "1\/4",
+            "B": "1\/2",
+            "C": "3\/4",
+            "D": "1"
+        },
+        "correct_answer": "A",
+        "explanation": "Solo una combinación favorable entre cuatro posibles."
+    },
+    {
+        "question_number": 75,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Si la probabilidad de ganar un juego es 0.9, entonces:",
+        "options": {
+            "A": "Es imposible ganar",
+            "B": "Es poco probable ganar",
+            "C": "Es muy probable ganar",
+            "D": "Es seguro ganar"
+        },
+        "correct_answer": "C",
+        "explanation": "0.9 equivale al 90%."
+    },
+    {
+        "question_number": 76,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Una bolsa contiene 2 bolas rojas, 3 verdes y 5 azules. ¿Cuál es la probabilidad de sacar una bola que NO sea azul?",
+        "options": {
+            "A": "1\/2",
+            "B": "2\/5",
+            "C": "3\/10",
+            "D": "4\/5"
+        },
+        "correct_answer": "A",
+        "explanation": "Hay 5 bolas no azules de un total de 10."
+    },
+    {
+        "question_number": 77,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Al lanzar un dado, ¿cuál es la probabilidad de obtener un número mayor que 4?",
+        "options": {
+            "A": "1\/6",
+            "B": "2\/6",
+            "C": "3\/6",
+            "D": "4\/6"
+        },
+        "correct_answer": "B",
+        "explanation": "Los números favorables son 5 y 6."
+    },
+    {
+        "question_number": 78,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Si un evento tiene probabilidad 1, entonces:",
+        "options": {
+            "A": "Es imposible",
+            "B": "Es poco probable",
+            "C": "Es seguro",
+            "D": "Es aleatorio"
+        },
+        "correct_answer": "C",
+        "explanation": "Probabilidad 1 significa certeza."
+    },
+    {
+        "question_number": 79,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "En una urna hay 12 fichas numeradas del 1 al 12. ¿Cuál es la probabilidad de sacar un número múltiplo de 3?",
+        "options": {
+            "A": "1\/6",
+            "B": "1\/4",
+            "C": "1\/3",
+            "D": "1\/2"
+        },
+        "correct_answer": "C",
+        "explanation": "Los múltiplos de 3 son 3, 6, 9 y 12. Hay 4 de 12."
+    },
+    {
+        "question_number": 80,
+        "area": "Matematicas",
+        "topic": "Probabilidad",
+        "level": "Dificil",
+        "question_text": "Dos eventos tienen probabilidades de 0.2 y 0.8. ¿Cuál es más probable?",
+        "options": {
+            "A": "El de 0.2",
+            "B": "El de 0.8",
+            "C": "Ambos igual",
+            "D": "No se puede determinar"
+        },
+        "correct_answer": "B",
+        "explanation": "0.8 representa una probabilidad mayor que 0.2."
+    },
+    {
+        "question_number": 81,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Facil",
+        "question_text": "¿Cuánto es el 10% de 200?",
+        "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "40"
+        },
+        "correct_answer": "B",
+        "explanation": "200 × 0.10 = 20."
+    },
+    {
+        "question_number": 82,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Facil",
+        "question_text": "Un producto cuesta $100 y tiene un descuento del 20%. ¿Cuánto se descuenta?",
+        "options": {
+            "A": "$10",
+            "B": "$15",
+            "C": "$20",
+            "D": "$25"
+        },
+        "correct_answer": "C",
+        "explanation": "100 × 20% = 20."
+    },
+    {
+        "question_number": 83,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Facil",
+        "question_text": "¿Qué porcentaje representa 50 de 100?",
+        "options": {
+            "A": "25%",
+            "B": "50%",
+            "C": "75%",
+            "D": "100%"
+        },
+        "correct_answer": "B",
+        "explanation": "50\/100 = 0.5 = 50%."
+    },
+    {
+        "question_number": 84,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Facil",
+        "question_text": "¿Cuánto es el 25% de 80?",
+        "options": {
+            "A": "10",
+            "B": "15",
+            "C": "20",
+            "D": "25"
+        },
+        "correct_answer": "C",
+        "explanation": "80 × 0.25 = 20."
+    },
+    {
+        "question_number": 85,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Facil",
+        "question_text": "Si un estudiante responde correctamente 18 de 20 preguntas, ¿qué porcentaje acertó?",
+        "options": {
+            "A": "80%",
+            "B": "85%",
+            "C": "90%",
+            "D": "95%"
+        },
+        "correct_answer": "C",
+        "explanation": "18\/20 = 0.9 = 90%."
+    },
+    {
+        "question_number": 86,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Medio",
+        "question_text": "Un artículo cuesta $250. Si aumenta un 10%, ¿cuál será su nuevo precio?",
+        "options": {
+            "A": "$260",
+            "B": "$270",
+            "C": "$275",
+            "D": "$300"
+        },
+        "correct_answer": "C",
+        "explanation": "10% de 250 es 25. Nuevo valor: 275."
+    },
+    {
+        "question_number": 87,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Medio",
+        "question_text": "Si una población aumenta de 1000 a 1200 habitantes, el aumento porcentual es:",
+        "options": {
+            "A": "10%",
+            "B": "15%",
+            "C": "20%",
+            "D": "25%"
+        },
+        "correct_answer": "C",
+        "explanation": "El incremento es 200 sobre 1000."
+    },
+    {
+        "question_number": 88,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Medio",
+        "question_text": "¿Qué porcentaje equivale a la fracción 3\/4?",
+        "options": {
+            "A": "25%",
+            "B": "50%",
+            "C": "75%",
+            "D": "80%"
+        },
+        "correct_answer": "C",
+        "explanation": "3 ÷ 4 = 0.75 = 75%."
+    },
+    {
+        "question_number": 89,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Medio",
+        "question_text": "¿Cuánto es el 15% de 400?",
+        "options": {
+            "A": "40",
+            "B": "50",
+            "C": "60",
+            "D": "80"
+        },
+        "correct_answer": "C",
+        "explanation": "400 × 0.15 = 60."
+    },
+    {
+        "question_number": 90,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Medio",
+        "question_text": "Un descuento del 100% significa:",
+        "options": {
+            "A": "Pagar la mitad",
+            "B": "No pagar nada",
+            "C": "Pagar el doble",
+            "D": "Pagar el 10%"
+        },
+        "correct_answer": "B",
+        "explanation": "Se descuenta la totalidad del valor."
+    },
+    {
+        "question_number": 91,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Un televisor cuesta $1.200.000 y tiene un descuento del 15%. ¿Cuál es el valor del descuento?",
+        "options": {
+            "A": "$120.000",
+            "B": "$150.000",
+            "C": "$180.000",
+            "D": "$200.000"
+        },
+        "correct_answer": "C",
+        "explanation": "1.200.000 × 15% = 180.000."
+    },
+    {
+        "question_number": 92,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Después de aplicar un descuento del 20%, un producto queda costando $80. ¿Cuál era su precio original?",
+        "options": {
+            "A": "$90",
+            "B": "$95",
+            "C": "$100",
+            "D": "$120"
+        },
+        "correct_answer": "C",
+        "explanation": "Si $80 representa el 80%, entonces el 100% es $100."
+    },
+    {
+        "question_number": 93,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Un estudiante obtuvo 45 respuestas correctas de un total de 60 preguntas. ¿Qué porcentaje de aciertos obtuvo?",
+        "options": {
+            "A": "65%",
+            "B": "70%",
+            "C": "75%",
+            "D": "80%"
+        },
+        "correct_answer": "C",
+        "explanation": "45 ÷ 60 = 0.75 = 75%."
+    },
+    {
+        "question_number": 94,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "En una empresa, 18 de 60 empleados trabajan en ventas. ¿Qué porcentaje representan?",
+        "options": {
+            "A": "20%",
+            "B": "25%",
+            "C": "30%",
+            "D": "35%"
+        },
+        "correct_answer": "C",
+        "explanation": "18 ÷ 60 = 0.30 = 30%."
+    },
+    {
+        "question_number": 95,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "¿Cuál es el 12% de 250?",
+        "options": {
+            "A": "25",
+            "B": "30",
+            "C": "35",
+            "D": "40"
+        },
+        "correct_answer": "B",
+        "explanation": "250 × 0.12 = 30."
+    },
+    {
+        "question_number": 96,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Una población disminuye de 5000 habitantes a 4500. ¿Cuál fue la disminución porcentual?",
+        "options": {
+            "A": "5%",
+            "B": "8%",
+            "C": "10%",
+            "D": "15%"
+        },
+        "correct_answer": "C",
+        "explanation": "La disminución fue de 500 habitantes. 500 ÷ 5000 = 10%."
+    },
+    {
+        "question_number": 97,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "¿Qué porcentaje equivale a la fracción 7\/20?",
+        "options": {
+            "A": "25%",
+            "B": "30%",
+            "C": "35%",
+            "D": "40%"
+        },
+        "correct_answer": "C",
+        "explanation": "7 ÷ 20 = 0.35 = 35%."
+    },
+    {
+        "question_number": 98,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Una camisa cuesta $80.000 y aumenta un 25%. ¿Cuál será el nuevo precio?",
+        "options": {
+            "A": "$90.000",
+            "B": "$95.000",
+            "C": "$100.000",
+            "D": "$105.000"
+        },
+        "correct_answer": "C",
+        "explanation": "25% de 80.000 es 20.000. Nuevo precio: 100.000."
+    },
+    {
+        "question_number": 99,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "Si un valor aumenta un 50%, el nuevo valor corresponde a:",
+        "options": {
+            "A": "100% del valor inicial",
+            "B": "120% del valor inicial",
+            "C": "150% del valor inicial",
+            "D": "200% del valor inicial"
+        },
+        "correct_answer": "C",
+        "explanation": "100% + 50% = 150%."
+    },
+    {
+        "question_number": 100,
+        "area": "Matematicas",
+        "topic": "Porcentajes",
+        "level": "Dificil",
+        "question_text": "En una encuesta participaron 400 personas. Si el 65% respondió afirmativamente, ¿cuántas personas dieron esa respuesta?",
+        "options": {
+            "A": "240",
+            "B": "250",
+            "C": "260",
+            "D": "280"
+        },
+        "correct_answer": "C",
+        "explanation": "400 × 0.65 = 260."
+    }
+]

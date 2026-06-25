@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Player;
+use App\Models\PlayerLogin;
 use App\Models\Question;
 use App\Services\GeminiService;
 use Livewire\Attributes\On;
@@ -58,9 +59,15 @@ new class extends Component
         if ($player) {
             $this->loginStep = $player->hasPin() ? 'enter_pin' : 'set_pin';
         } else {
-            Player::findOrCreateByNickname($this->nickname);
+            $player = Player::findOrCreateByNickname($this->nickname);
             $this->loginStep = 'set_pin';
         }
+
+        PlayerLogin::record([
+            'player_id' => $player->id,
+            'nickname' => $this->nickname,
+            'action' => 'login_attempt',
+        ]);
 
         $this->pin = '';
         $this->pinError = '';
@@ -79,11 +86,25 @@ new class extends Component
         if (! $player || ! $player->verifyPin($this->pin)) {
             $this->pinError = 'PIN incorrecto. Intenta de nuevo.';
 
+            PlayerLogin::record([
+                'player_id' => $player?->id,
+                'nickname' => $this->nickname,
+                'action' => 'login_failure',
+                'failure_reason' => 'wrong_pin',
+            ]);
+
             return;
         }
 
         $this->player = $player;
         session()->put('player_id', $this->player->id);
+
+        PlayerLogin::record([
+            'player_id' => $this->player->id,
+            'nickname' => $this->nickname,
+            'action' => 'login_success',
+        ]);
+
         $this->loadStats();
     }
 
@@ -104,6 +125,13 @@ new class extends Component
         $player->setPin($this->pin);
         $this->player = $player;
         session()->put('player_id', $this->player->id);
+
+        PlayerLogin::record([
+            'player_id' => $this->player->id,
+            'nickname' => $this->nickname,
+            'action' => 'login_success',
+        ]);
+
         $this->loadStats();
     }
 
@@ -116,6 +144,12 @@ new class extends Component
 
     public function logout(): void
     {
+        PlayerLogin::record([
+            'player_id' => $this->player->id,
+            'nickname' => $this->player->nickname,
+            'action' => 'logout',
+        ]);
+
         session()->forget('player_id');
         $this->player = null;
         $this->nickname = '';
@@ -190,10 +224,16 @@ new class extends Component
             $this->player->increment('coins', 10);
             $this->player->increment('streak');
             $this->checkLevelUp();
+            $this->dispatch('toast', type: 'correct');
         } else {
             $this->lastExplanation = $this->getExplanation($this->question, $letter);
-            $this->player->decrement('hearts');
+
+            if ($this->player->hearts > 0) {
+                $this->player->decrement('hearts');
+            }
+
             $this->player->update(['streak' => 0]);
+            $this->dispatch('toast', type: 'incorrect');
         }
 
         $this->loadStats();
@@ -270,7 +310,7 @@ new class extends Component
         $this->correctCount = $stats['correct'];
     }
 
-    /** @return array<int, array{question: Question, is_correct: bool}> */
+    /** @return array<int, array{id: int, question: Question, is_correct: bool}> */
     public array $mistakes = [];
 
     public function loadMistakes(): void
@@ -285,12 +325,28 @@ new class extends Component
             ->take(20)
             ->get()
             ->map(fn($a) => [
+                'id' => $a->id,
                 'question' => $a->question,
                 'is_correct' => $a->is_correct,
             ])
             ->filter(fn($m) => ! $m['is_correct'] && $m['question'])
             ->values()
             ->toArray();
+    }
+
+    public function markUnderstood(int $answerId): void
+    {
+        if (! $this->player) {
+            return;
+        }
+
+        $answer = $this->player->answers()->find($answerId);
+
+        if ($answer && ! $answer->is_correct) {
+            $answer->delete();
+            $this->loadMistakes();
+            $this->loadStats();
+        }
     }
 
     public function leaderboard(): array
@@ -392,6 +448,55 @@ new class extends Component
     show: true,
     setTransition(t) { this.transition = t; this.show = false; setTimeout(() => { this.show = true; }, 50); }
 }">
+    {{-- Toast alert --}}
+    <div
+        x-data="{
+            show: false,
+            type: 'correct',
+            messages: {
+                correct: ['¡Increíble!', '¡Eres un crack!', '¡Perfecto!', '¡Imparable!', '¡Genio total!'],
+                incorrect: ['¡Casi!', '¡No te rindas!', '¡Tú puedes!', '¡Ánimo, guerrero!', '¡La próxima sale!'],
+            },
+            emojis: {
+                correct: ['🎉', '🔥', '✨', '👏', '💪'],
+                incorrect: ['😅', '🤞', '🙌', '💡', '🌟'],
+            },
+            get message() {
+                const list = this.messages[this.type];
+                return list ? list[Math.floor(Math.random() * list.length)] : '';
+            },
+            get emoji() {
+                const list = this.emojis[this.type];
+                return list ? list[Math.floor(Math.random() * list.length)] : '';
+            },
+            showToast(event) {
+                this.type = event.detail.type || 'correct';
+                this.show = true;
+                setTimeout(() => { this.show = false; }, 2500);
+            },
+        }"
+        @toast.window="showToast($event)"
+        x-show="show"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-8 scale-95"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+        x-transition:leave-end="opacity-0 -translate-y-8 scale-95"
+        class="fixed top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
+        style="display: none;"
+    >
+        <div
+            :class="type === 'correct'
+                ? 'bg-green-500 border-green-700'
+                : 'bg-orange-500 border-orange-700'"
+            class="flex items-center gap-3 px-6 py-4 rounded-3xl border-b-4 shadow-[0_8px_0_0_rgba(0,0,0,0.15)] text-white font-black text-lg"
+        >
+            <span x-text="emoji" class="text-2xl"></span>
+            <span x-text="message"></span>
+        </div>
+    </div>
+
     @if (! $player)
         {{-- Login / Register --}}
         <div class="flex-1 flex items-center justify-center px-4 min-h-screen">
@@ -399,7 +504,7 @@ new class extends Component
                 <div class="bg-white rounded-3xl border-4 border-slate-200 shadow-sm p-8 text-center">
                     <div class="text-5xl mb-4">📚</div>
                     <h1 class="text-2xl font-black text-slate-800 mb-1">ICFES Study</h1>
-                    <p class="text-sm text-slate-500 font-medium mb-1">Seoul Edition</p>
+                    <p class="text-sm text-slate-500 font-medium mb-1">Duk Edition</p>
 
                     {{-- Step 1: Nickname --}}
                     @if ($loginStep === 'nickname')
@@ -504,7 +609,7 @@ new class extends Component
             <div class="p-5 border-b-4 border-slate-100">
                 <button wire:click="navigate('mapa')" class="text-left">
                     <h2 class="text-lg font-black text-blue-600 leading-tight">ICFES Study</h2>
-                    <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Seoul Edition</p>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Duk Edition</p>
                 </button>
             </div>
 
@@ -558,7 +663,7 @@ new class extends Component
                 <div class="animate-fade-in" x-transition>
                     <div class="sticky top-0 z-10 bg-[#faf9f5]/95 backdrop-blur-md border-b-4 border-slate-200">
                         <div class="max-w-4xl mx-auto px-4 py-3">
-                            <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Study Seoul - Learn</p>
+                            <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Study Duk - Learn</p>
                             <h1 class="text-xl font-black text-slate-800">Mapa de Aprendizaje</h1>
                         </div>
                     </div>
@@ -572,7 +677,7 @@ new class extends Component
                             </div>
                             <div class="flex items-center gap-2 bg-white rounded-full border-2 border-red-200 px-4 py-2 shadow-sm">
                                 <span class="material-symbols-outlined text-red-400 text-lg">favorite</span>
-                                <span class="text-xs font-black text-slate-600">{{ $player->hearts }} Vidas</span>
+                                <span class="text-xs font-black text-slate-600">{{ max(0, $player->hearts) }} Vidas</span>
                             </div>
                             <div class="flex items-center gap-2 bg-white rounded-full border-2 border-amber-200 px-4 py-2 shadow-sm">
                                 <span class="material-symbols-outlined text-amber-500 text-lg">monetization_on</span>
@@ -686,7 +791,7 @@ new class extends Component
                                     <span class="text-xs font-bold text-slate-500">{{ $player->nickname }}</span>
                                     <span class="text-[10px] font-black text-red-500 ml-auto flex items-center gap-1">
                                         <span class="material-symbols-outlined text-sm">favorite</span>
-                                        {{ $player->hearts }}
+                                        {{ max(0, $player->hearts) }}
                                     </span>
                                 </div>
                             </div>
@@ -894,11 +999,18 @@ new class extends Component
                                                 </div>
                                             @endif
 
-                                            <button wire:click="navigate('leccion')"
-                                                class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black px-5 py-2.5 rounded-2xl border-b-4 border-green-700 active:translate-y-1 active:border-b-2 transition-all shadow-[0_4px_0_0_rgba(21,128,61,1)] text-sm">
-                                                <span class="material-symbols-outlined text-lg">autorenew</span>
-                                                Seguir Practicando
-                                            </button>
+                                            <div class="flex flex-wrap gap-3">
+                                                <button wire:click="markUnderstood({{ $mistake['id'] }})"
+                                                    class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-black px-5 py-2.5 rounded-2xl border-b-4 border-amber-700 active:translate-y-1 active:border-b-2 transition-all shadow-[0_4px_0_0_rgba(180,83,9,1)] text-sm">
+                                                    <span class="material-symbols-outlined text-lg">check</span>
+                                                    Entendido
+                                                </button>
+                                                <button wire:click="navigate('leccion')"
+                                                    class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black px-5 py-2.5 rounded-2xl border-b-4 border-green-700 active:translate-y-1 active:border-b-2 transition-all shadow-[0_4px_0_0_rgba(21,128,61,1)] text-sm">
+                                                    <span class="material-symbols-outlined text-lg">autorenew</span>
+                                                    Seguir Practicando
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 @endif

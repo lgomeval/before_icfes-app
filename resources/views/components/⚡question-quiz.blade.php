@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Player;
+use App\Models\PlayerLogin;
 use App\Models\Question;
 use App\Services\GeminiService;
 use Livewire\Attributes\On;
@@ -52,12 +53,25 @@ new class extends Component
 
         $this->player = Player::findOrCreateByNickname($this->nickname);
         session()->put('player_id', $this->player->id);
+
+        PlayerLogin::record([
+            'player_id' => $this->player->id,
+            'nickname' => $this->nickname,
+            'action' => 'login_success',
+        ]);
+
         $this->loadStats();
         $this->loadQuestion();
     }
 
     public function logout(): void
     {
+        PlayerLogin::record([
+            'player_id' => $this->player->id,
+            'nickname' => $this->player->nickname,
+            'action' => 'logout',
+        ]);
+
         session()->forget('player_id');
         $this->player = null;
         $this->question = null;

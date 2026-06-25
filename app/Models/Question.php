@@ -57,6 +57,15 @@ class Question extends Model
         return $query;
     }
 
+    public function scopeBySource($query, ?string $source)
+    {
+        if ($source !== null) {
+            return $query->where('source', $source);
+        }
+
+        return $query->whereNull('source');
+    }
+
     public static function areas(): array
     {
         return ['Matematicas', 'Ciencias Naturales', 'Ingles'];

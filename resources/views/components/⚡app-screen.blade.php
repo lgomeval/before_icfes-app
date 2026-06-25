@@ -15,6 +15,7 @@ new class extends Component
     public string $loginStep = 'nickname';
     public string $pinError = '';
     public string $currentScreen = 'mapa';
+    public ?string $questionSource = null;
 
     /** Quiz */
     public ?Question $question = null;
@@ -163,6 +164,12 @@ new class extends Component
     {
         $this->currentScreen = $screen;
 
+        if ($screen === 'mapa') {
+            $this->questionSource = null;
+        } elseif ($screen === 'mapa_ia') {
+            $this->questionSource = 'ai';
+        }
+
         if ($screen === 'errores' && $this->player) {
             $this->loadMistakes();
         }
@@ -182,8 +189,26 @@ new class extends Component
 
     public function startNewSession(): void
     {
+        $this->questionSource = null;
         $this->startLesson();
         $this->navigate('leccion');
+    }
+
+    public function startAISession(): void
+    {
+        $this->questionSource = 'ai';
+        $this->startLesson();
+        $this->navigate('leccion');
+    }
+
+    public function getAiQuestionsCount(): int
+    {
+        return Question::where('source', 'ai')->count();
+    }
+
+    public function getMapScreen(): string
+    {
+        return $this->questionSource === 'ai' ? 'mapa_ia' : 'mapa';
     }
 
     public function loadQuestion(): void
@@ -194,6 +219,7 @@ new class extends Component
             ->when($this->selectedArea, fn($q) => $q->byArea($this->selectedArea))
             ->when($this->selectedTopic, fn($q) => $q->byTopic($this->selectedTopic))
             ->when($this->selectedLevel, fn($q) => $q->byLevel($this->selectedLevel))
+            ->bySource($this->questionSource)
             ->when(count($correctIds) > 0, fn($q) => $q->whereNotIn('id', $correctIds))
             ->random();
 
@@ -434,6 +460,7 @@ new class extends Component
 
     private array $screenMap = [
         'mapa' => 'Mapa de Aprendizaje',
+        'mapa_ia' => 'Mapa con IA',
         'leccion' => 'Lección en Vivo',
         'resumen' => 'Resumen de Sesión',
         'errores' => 'Revisión de Errores',
@@ -616,6 +643,7 @@ new class extends Component
             <nav class="flex-1 p-4 space-y-2">
                 @foreach ([
                     ['id' => 'mapa', 'icon' => 'menu_book', 'label' => 'MAPA'],
+                    ['id' => 'mapa_ia', 'icon' => 'smart_toy', 'label' => 'MAPA IA'],
                     ['id' => 'errores', 'icon' => 'edit_note', 'label' => 'ERRORES'],
                     ['id' => 'ranking', 'icon' => 'emoji_events', 'label' => 'RANKING'],
                     ['id' => 'perfil', 'icon' => 'person', 'label' => 'PERFIL'],
@@ -775,12 +803,145 @@ new class extends Component
                     </div>
                 </div>
 
+            {{-- Mapa con IA --}}
+            @elseif ($currentScreen === 'mapa_ia')
+                <div class="animate-fade-in" x-transition>
+                    <div class="sticky top-0 z-10 bg-[#faf9f5]/95 backdrop-blur-md border-b-4 border-purple-200">
+                        <div class="max-w-4xl mx-auto px-4 py-3">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-block bg-purple-100 text-purple-700 text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full border border-purple-300">
+                                    IA
+                                </span>
+                            </div>
+                            <h1 class="text-xl font-black text-slate-800">Mapa con IA</h1>
+                        </div>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto px-4 py-6 space-y-5">
+                        {{-- Gamification badges --}}
+                        <div class="flex gap-3 flex-wrap">
+                            <div class="flex items-center gap-2 bg-white rounded-full border-2 border-orange-200 px-4 py-2 shadow-sm">
+                                <span class="material-symbols-outlined text-amber-500 text-lg">local_fire_department</span>
+                                <span class="text-xs font-black text-slate-600">{{ $player->streak }} Días</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-full border-2 border-red-200 px-4 py-2 shadow-sm">
+                                <span class="material-symbols-outlined text-red-400 text-lg">favorite</span>
+                                <span class="text-xs font-black text-slate-600">{{ max(0, $player->hearts) }} Vidas</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-full border-2 border-amber-200 px-4 py-2 shadow-sm">
+                                <span class="material-symbols-outlined text-amber-500 text-lg">monetization_on</span>
+                                <span class="text-xs font-black text-slate-600">{{ $player->coins }} Won</span>
+                            </div>
+                        </div>
+
+                        {{-- Banner card --}}
+                        <div class="bg-white rounded-3xl border-4 border-purple-200 shadow-sm overflow-hidden relative">
+                            <div class="absolute inset-0 opacity-5" style="background: repeating-linear-gradient(45deg, #7c3aed, #7c3aed 2px, transparent 2px, transparent 10px);"></div>
+                            <div class="relative p-6 sm:p-8">
+                                <div class="flex items-center gap-2 mb-4">
+                                    <span class="inline-flex items-center gap-1 bg-purple-100 text-purple-700 text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full border-2 border-purple-200">
+                                        <span class="material-symbols-outlined text-sm">smart_toy</span>
+                                        Inteligencia Artificial
+                                    </span>
+                                </div>
+                                <h2 class="text-xl font-black text-slate-800 mb-2">Preguntas Generadas por IA</h2>
+                                <p class="text-sm text-slate-500 mb-5">Practica con preguntas generadas por IA, alineadas al formato real del examen ICFES Saber 11. Preguntas contextuales, con razonamiento y análisis.</p>
+
+                                @if ($this->getAiQuestionsCount() === 0)
+                                    <div class="bg-amber-50 rounded-2xl border-4 border-amber-200 p-4 mb-4">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <span class="material-symbols-outlined text-amber-500">info</span>
+                                            <p class="text-[10px] font-black uppercase tracking-widest text-amber-600">Sin preguntas IA</p>
+                                        </div>
+                                        <p class="text-xs text-amber-700">Aún no hay preguntas generadas. Ejecuta el comando:</p>
+                                        <code class="block mt-1 text-xs bg-amber-100 text-amber-800 p-2 rounded-xl font-mono">php artisan questions:generate-ai --all --count=30</code>
+                                    </div>
+                                @else
+                                    <button wire:click="startAISession"
+                                        class="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white font-black px-6 py-3 rounded-2xl border-b-4 border-purple-700 active:translate-y-1 active:border-b-2 transition-all shadow-[0_4px_0_0_rgba(107,33,168,1)]">
+                                        <span class="material-symbols-outlined">play_arrow</span>
+                                        Iniciar Sesión IA
+                                    </button>
+                                @endif
+                            </div>
+                        </div>
+
+                        {{-- Roadmap --}}
+                        <div class="bg-white rounded-3xl border-4 border-slate-200 shadow-sm p-6">
+                            <h3 class="text-sm font-black text-slate-500 uppercase tracking-wider mb-6">Tu Progreso</h3>
+
+                            <div class="relative pl-8">
+                                <div class="absolute left-[19px] top-0 bottom-0 w-0.5 bg-slate-200 border-l-2 border-dashed border-slate-300"></div>
+
+                                <div class="relative mb-6">
+                                    <div class="absolute -left-[35px] top-1 w-10 h-10 rounded-full bg-green-100 border-4 border-green-300 flex items-center justify-center z-10">
+                                        <span class="material-symbols-outlined text-green-600 text-lg">check</span>
+                                    </div>
+                                    <div class="ml-4 p-4 bg-green-50/50 rounded-2xl border-2 border-green-100">
+                                        <p class="text-sm font-bold text-green-700">Bienvenida</p>
+                                        <p class="text-xs text-green-600">Completado</p>
+                                    </div>
+                                </div>
+
+                                <div class="relative mb-6">
+                                    <div class="absolute -left-[35px] top-1 w-10 h-10 rounded-full bg-purple-100 border-4 border-purple-500 flex items-center justify-center z-10">
+                                        <div class="absolute inset-0 rounded-full border-4 border-purple-400 animate-ping opacity-20"></div>
+                                        <span class="material-symbols-outlined text-purple-600 text-lg filled-icon">smart_toy</span>
+                                    </div>
+                                    <div class="ml-4 p-4 bg-purple-50 rounded-2xl border-4 border-purple-500 shadow-[0_4px_0_0_rgba(147,51,234,1)]">
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[9px] font-black uppercase tracking-widest bg-purple-500 text-white px-2 py-0.5 rounded-full">EN CURSO</span>
+                                        </div>
+                                        <p class="text-sm font-black text-slate-800">Práctica con IA - ICFES Real</p>
+                                        <p class="text-xs text-purple-600 font-semibold mt-1">
+                                            {{ $answeredCount }} preguntas respondidas
+                                        </p>
+                                        <div class="mt-3">
+                                            <div class="flex justify-between text-[9px] font-black uppercase text-purple-400 mb-1">
+                                                <span>Progreso</span><span>{{ $answeredCount }} / {{ $answeredCount + 5 }}</span>
+                                            </div>
+                                            <div class="h-2 bg-purple-100 rounded-full border border-purple-200">
+                                                <div class="h-full bg-purple-500 rounded-full" style="width: {{ min($answeredCount * 5, 100) }}%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    <div class="absolute -left-[35px] top-1 w-10 h-10 rounded-full bg-slate-100 border-4 border-slate-300 flex items-center justify-center z-10 opacity-50">
+                                        <span class="material-symbols-outlined text-slate-400 text-lg">lock</span>
+                                    </div>
+                                    <div class="ml-4 p-4 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-300 opacity-50">
+                                        <p class="text-sm font-bold text-slate-500">Simulacro IA Completo</p>
+                                        <p class="text-xs text-slate-400">Bloqueado — Completa la práctica IA primero</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Stats overview --}}
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            @foreach ([
+                                ['label' => 'Correctas', 'value' => $correctCount, 'color' => 'text-green-600 bg-green-50 border-green-200'],
+                                ['label' => 'Incorrectas', 'value' => $answeredCount - $correctCount, 'color' => 'text-red-500 bg-red-50 border-red-200'],
+                                ['label' => 'Precisión', 'value' => $this->getPercentage().'%', 'color' => 'text-purple-600 bg-purple-50 border-purple-200'],
+                                ['label' => 'Nivel', 'value' => $player->level, 'color' => 'text-amber-600 bg-amber-50 border-amber-200'],
+                            ] as $stat)
+                                <div class="bg-white rounded-2xl border-4 {{ $stat['color'] }} shadow-sm p-4 text-center">
+                                    <p class="text-[10px] font-black uppercase tracking-widest {{ explode(' ', $stat['color'])[0] }} mb-1">{{ $stat['label'] }}</p>
+                                    <p class="text-2xl font-black {{ explode(' ', $stat['color'])[0] }}">{{ $stat['value'] }}</p>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+
             {{-- Lección en Vivo --}}
             @elseif ($currentScreen === 'leccion' && $question)
                 <div class="animate-fade-in" x-transition>
                     <div class="sticky top-0 z-10 bg-[#faf9f5]/95 backdrop-blur-md border-b-4 border-slate-200">
                         <div class="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-                            <button wire:click="navigate('mapa')" class="w-10 h-10 rounded-2xl bg-white border-2 border-slate-200 flex items-center justify-center hover:bg-slate-50">
+                            <button wire:click="navigate('{{ $this->getMapScreen() }}')" class="w-10 h-10 rounded-2xl bg-white border-2 border-slate-200 flex items-center justify-center hover:bg-slate-50">
                                 <span class="material-symbols-outlined text-slate-500">close</span>
                             </button>
                             <div class="flex-1">
@@ -855,7 +1016,7 @@ new class extends Component
                         <span class="material-symbols-outlined text-5xl text-green-500 mb-3">check_circle</span>
                         <p class="text-xl font-black text-slate-800 mb-2">¡Completaste todo!</p>
                         <p class="text-sm text-slate-500 mb-4">No hay más preguntas disponibles con estos filtros.</p>
-                        <button wire:click="navigate('mapa')"
+                        <button wire:click="navigate('{{ $this->getMapScreen() }}')"
                             class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-5 py-2.5 rounded-2xl border-2 border-slate-200">
                             Volver al Mapa
                         </button>
@@ -933,7 +1094,7 @@ new class extends Component
                                 @endif
                             </div>
 
-                            <button wire:click="navigate('mapa')" class="mt-4 text-xs font-bold text-slate-400 hover:text-slate-600 uppercase">
+                            <button wire:click="navigate('{{ $this->getMapScreen() }}')" class="mt-4 text-xs font-bold text-slate-400 hover:text-slate-600 uppercase">
                                 Volver al Mapa
                             </button>
                         </div>
@@ -1171,6 +1332,7 @@ new class extends Component
             <div class="flex items-center justify-around py-2 px-2">
                 @foreach ([
                     ['id' => 'mapa', 'icon' => 'menu_book', 'label' => 'MAPA'],
+                    ['id' => 'mapa_ia', 'icon' => 'smart_toy', 'label' => 'MAPA IA'],
                     ['id' => 'errores', 'icon' => 'edit_note', 'label' => 'ERRORES'],
                     ['id' => 'ranking', 'icon' => 'emoji_events', 'label' => 'RANKING'],
                     ['id' => 'perfil', 'icon' => 'person', 'label' => 'PERFIL'],

@@ -110,6 +110,258 @@ PROMPT;
     }
 
     /**
+     * Generate ICFES-aligned questions for a specific area and level.
+     * Returns an array of question data ready to be stored in the database.
+     */
+    public function generateIcfesQuestions(string $area, string $level, int $count): array
+    {
+        $prompt = $this->buildIcfesGenerationPrompt($area, $level, $count);
+
+        $response = $this->callGeminiWithHigherTokens($prompt);
+
+        $questions = $response['questions'] ?? [];
+
+        if (empty($questions)) {
+            throw new \RuntimeException('Gemini returned no questions');
+        }
+
+        return array_map(fn (array $q) => [
+            'question_text' => $q['question_text'] ?? '',
+            'options' => $q['options'] ?? [],
+            'correct_answer' => $q['correct_answer'] ?? '',
+            'explanation' => $q['explanation'] ?? null,
+            'topic' => $q['topic'] ?? null,
+            'area' => $area,
+            'level' => $level,
+            'source' => 'ai',
+        ], $questions);
+    }
+
+    /**
+     * Build the prompt for generating real ICFES-style questions.
+     */
+    private function buildIcfesGenerationPrompt(string $area, string $level, int $count): string
+    {
+        $difficulty = match ($level) {
+            'Facil' => 'básico. Preguntas de comprensión literal y aplicación directa de conceptos fundamentales.',
+            'Medio' => 'intermedio. Preguntas que requieren relacionar conceptos, interpretar información y resolver problemas de 2-3 pasos.',
+            'Dificil' => 'avanzado. Preguntas que exigen análisis profundo, inferencia, síntesis de información y razonamiento multi-paso.',
+            default => 'intermedio.',
+        };
+
+        $areaPrompt = match ($area) {
+            'Matematicas' => $this->mathIcfesPrompt($difficulty),
+            'Ciencias Naturales' => $this->scienceIcfesPrompt($difficulty),
+            'Ingles' => $this->englishIcfesPrompt($difficulty),
+            default => '',
+        };
+
+        return <<<PROMPT
+Eres un generador de preguntas para el examen ICFES Saber 11 colombiano. Genera EXACTAMENTE {$count} preguntas del área de **{$area}** con nivel **{$level}** ({$difficulty}).
+
+{$areaPrompt}
+
+## Formato de respuesta
+
+Responde EXCLUSIVAMENTE con un JSON válido sin markdown:
+
+{
+    "questions": [
+        {
+            "question_text": "Texto completo de la pregunta con su contexto o enunciado",
+            "options": {"A": "Opción A", "B": "Opción B", "C": "Opción C", "D": "Opción D"},
+            "correct_answer": "A",
+            "explanation": "Explicación breve en español de por qué esa es la respuesta correcta",
+            "topic": "Tema específico"
+        }
+    ]
+}
+
+REGLAS:
+- Las opciones deben ser plausibles (no absurdas ni obvias).
+- La respuesta correcta debe estar distribuida aleatoriamente entre A, B, C, D.
+- Cada pregunta debe evaluar una competencia, no solo memoria.
+- Los textos deben ser originales, no copiados.
+- Las explicaciones deben ser educativas y en español.
+PROMPT;
+    }
+
+    /**
+     * ICFES-style prompt for Mathematics.
+     */
+    private function mathIcfesPrompt(string $difficulty): string
+    {
+        return <<<'PROMPT'
+## INSTRUCCIONES ESPECÍFICAS PARA MATEMÁTICAS ICFES
+
+Genera preguntas que evalúen competencias matemáticas, NO simple memoria de fórmulas. Cada pregunta debe incluir un CONTEXTO o SITUACIÓN REAL.
+
+Tipos de preguntas que debes generar (varíalas):
+1. **Razonamiento cuantitativo**: problemas con situaciones cotidianas (compras, mediciones, presupuestos).
+2. **Interpretación de datos**: preguntas que describan una tabla, gráfico o conjunto de datos e inviten a interpretarlos.
+3. **Geometría aplicada**: problemas de áreas, volúmenes o perímetros en contextos reales (terrenos, empaques, construcción).
+4. **Probabilidad y estadística**: situaciones de juegos, encuestas, experimentos aleatorios.
+5. **Pensamiento variacional**: patrones, secuencias, proporcionalidad, porcentajes en contextos financieros.
+
+Temas permitidos: Geometria, Algebra, Estadistica, Probabilidad, Porcentajes.
+
+Ejemplo de buen formato:
+"Una tienda ofrece un descuento del 25% sobre el precio original de un artículo. Si después del descuento se aplica un IVA del 19% sobre el precio rebajado, y el cliente paga $142,800, ¿cuál era el precio original del artículo?"
+PROMPT;
+    }
+
+    /**
+     * ICFES-style prompt for Natural Sciences.
+     */
+    private function scienceIcfesPrompt(string $difficulty): string
+    {
+        return <<<'PROMPT'
+## INSTRUCCIONES ESPECÍFICAS PARA CIENCIAS NATURALES ICFES
+
+Genera preguntas que evalúen la capacidad de analizar fenómenos científicos, NO simple memorización de datos. Usa el método científico como eje.
+
+Tipos de preguntas que debes generar (varíalas):
+1. **Diseño experimental**: plantea un experimento con variables (independiente, dependiente, controladas) y pregunta cuál es la conclusión válida.
+2. **Interpretación de gráficas/tablas**: describe datos de un experimento e invita a interpretarlos.
+3. **Aplicación de conceptos**: presenta un fenómeno cotidiano y pregunta qué principio científico lo explica.
+4. **Análisis de cadenas tróficas, ciclos biogeoquímicos o ecosistemas**.
+5. **Relación estructura-función en biología, física aplicada o química en contexto**.
+
+Temas permitidos: Biologia, Fisica, Quimica, Ecologia.
+
+Ejemplo de buen formato:
+"Un estudiante coloca una planta en una caja con una única abertura lateral por donde entra luz. Después de una semana observa que el tallo crece inclinado hacia la abertura. ¿Qué fenómeno explica mejor este resultado?"
+PROMPT;
+    }
+
+    /**
+     * ICFES-style prompt for English.
+     */
+    private function englishIcfesPrompt(string $difficulty): string
+    {
+        return <<<'PROMPT'
+## INSTRUCCIONES ESPECÍFICAS PARA INGLÉS ICFES
+
+Genera preguntas que evalúen competencia comunicativa en inglés en contextos auténticos, NO simple traducción o reglas gramaticales aisladas.
+
+Tipos de preguntas que debes generar (varíalas):
+1. **Reading comprehension**: un pasaje corto en inglés (60-150 palabras) + preguntas sobre idea principal, detalles, inferencia, propósito del autor.
+   - El pasaje debe ser un texto auténtico: email, artículo, anuncio, carta, reseña.
+   - En el question_text incluye el pasaje COMPLETO seguido de la pregunta.
+2. **Grammar in context**: un párrafo con espacios en blanco donde el estudiante debe elegir la palabra/frase correcta según el contexto.
+3. **Vocabulary in context**: completar oraciones con la palabra que mejor se ajusta al significado del texto.
+4. **Situaciones comunicativas**: diálogos o situaciones donde se evalúa la respuesta apropiada.
+
+Temas permitidos: Vocabulary, Grammar, Reading.
+
+IMPORTANTE: Las preguntas y opciones deben estar en INGLÉS. Solo la EXPLANATION va en español.
+
+Ejemplo de buen formato (Reading):
+"Read the following text: 'The city council announced yesterday that all public schools will receive new computers starting next month. The initiative, funded by a national grant, aims to reduce the digital gap among students from low-income families. Teachers have expressed enthusiasm about the program.' According to the text, what is the main purpose of the initiative?"
+PROMPT;
+    }
+
+    /**
+     * Call Gemini API with higher token limit for question generation.
+     * Includes retry logic with exponential backoff for rate limiting (503).
+     */
+    private function callGeminiWithHigherTokens(string $prompt): array
+    {
+        $url = "{$this->baseUrl}/{$this->model}:generateContent?key={$this->apiKey}";
+
+        $payload = [
+            'contents' => [
+                [
+                    'parts' => [
+                        ['text' => $prompt],
+                    ],
+                ],
+            ],
+            'generationConfig' => [
+                'temperature' => 0.7,
+                'topP' => 0.95,
+                'maxOutputTokens' => 8192,
+            ],
+            'safetySettings' => [
+                ['category' => 'HARM_CATEGORY_HARASSMENT', 'threshold' => 'BLOCK_ONLY_HIGH'],
+                ['category' => 'HARM_CATEGORY_HATE_SPEECH', 'threshold' => 'BLOCK_ONLY_HIGH'],
+                ['category' => 'HARM_CATEGORY_SEXUALLY_EXPLICIT', 'threshold' => 'BLOCK_ONLY_HIGH'],
+                ['category' => 'HARM_CATEGORY_DANGEROUS_CONTENT', 'threshold' => 'BLOCK_ONLY_HIGH'],
+            ],
+        ];
+
+        $maxRetries = 3;
+        $lastError = null;
+
+        for ($attempt = 0; $attempt <= $maxRetries; $attempt++) {
+            if ($attempt > 0) {
+                $delay = (int) pow(2, $attempt);
+                Log::warning("Gemini API retry {$attempt}/{$maxRetries}, waiting {$delay}s...");
+                sleep($delay);
+            }
+
+            try {
+                $response = Http::timeout(120)
+                    ->withHeaders(['Content-Type' => 'application/json'])
+                    ->post($url, $payload);
+            } catch (ConnectionException $e) {
+                $lastError = new \RuntimeException('Gemini API connection failed: '.$e->getMessage());
+                Log::error('Gemini API connection failed', ['error' => $e->getMessage()]);
+
+                continue;
+            }
+
+            if (! $response->successful()) {
+                $status = $response->status();
+                Log::error('Gemini API error', [
+                    'status' => $status,
+                    'body' => $response->body(),
+                ]);
+
+                if ($status === 503 || $status === 429) {
+                    $lastError = new \RuntimeException("Gemini API error: {$status}");
+
+                    continue;
+                }
+
+                throw new \RuntimeException("Gemini API error: {$status}");
+            }
+
+            $data = $response->json();
+
+            $text = $data['candidates'][0]['content']['parts'][0]['text'] ?? null;
+
+            if ($text === null) {
+                Log::error('Gemini API unexpected response', ['response' => $data]);
+                throw new \RuntimeException('Unexpected Gemini API response structure');
+            }
+
+            $text = trim($text);
+            $text = preg_replace('/^```(?:json)?\s*\n/', '', $text);
+            $text = preg_replace('/\n```\s*$/', '', $text);
+            $text = trim($text);
+
+            $text = $this->sanitizeJsonText($text);
+
+            $decoded = json_decode($text, true);
+            $jsonError = json_last_error();
+
+            if ($jsonError !== JSON_ERROR_NONE) {
+                file_put_contents(storage_path('logs/gemini_generate_raw.txt'), $text);
+                throw new \RuntimeException('Gemini returned invalid JSON: '.json_last_error_msg().' (code: '.$jsonError.')');
+            }
+
+            if ($decoded === null && $text !== 'null') {
+                throw new \RuntimeException('Gemini JSON decoded to null. Text length: '.strlen($text));
+            }
+
+            return $decoded;
+        }
+
+        throw $lastError ?: new \RuntimeException('Gemini API failed after '.$maxRetries.' retries');
+    }
+
+    /**
      * Build the prompt for extracting questions from a source image.
      */
     private function buildExtractionPrompt(): string
